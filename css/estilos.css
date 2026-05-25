@@ -1,0 +1,1006 @@
+/* ==================================================
+RESET GENERAL
+================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ==================================================
+VARIABLES DE COLOR Y2K / FRUTIGER AERO
+================================================== */
+
+:root {
+    --azul-aqua: #5edfff;
+    --cyan: #00ffff;
+    --verde-neon: #39ff14;
+    --rosa: #ff00ff;
+    --amarillo: #fff200;
+    --fondo: #dff6ff;
+    --gris-xp: #d6e4f0;
+    --azul-windows: #3b82f6;
+    --azul-profundo: #0057d9;
+    --negro: #050505;
+    --blanco: #ffffff;
+    --morado: #7b2cff;
+}
+
+
+/* ==================================================
+BODY Y FONDO GENERAL
+================================================== */
+
+body {
+    font-family: Verdana, Tahoma, sans-serif;
+    background-color: #000000;
+    background-image: url("../img/backgrounds/stars.gif");
+    background-repeat: repeat;
+    background-attachment: fixed;
+    color: var(--negro);
+    min-height: 100vh;
+}
+
+/* ==================================================
+FONDO ANIMADO OLD INTERNET
+================================================== */
+
+.fondo-gifs {
+    position: fixed;
+    inset: 0;
+    z-index: 20;
+    overflow: visible;
+    pointer-events: none;
+    background: transparent;
+}
+
+
+
+.gif-bg {
+    position: fixed;
+    z-index: 30;
+    height: auto;
+    image-rendering: pixelated;
+    filter: drop-shadow(0 0 6px #00ffff);
+    opacity: 0.95;
+    pointer-events: none;
+}
+
+/* Gifs decorativos flotando encima */
+
+.gif-bg-1 {
+    width: 70px;
+    top: 70px;
+    left: 18px;
+    animation: flotarUno 6s infinite alternate ease-in-out;
+}
+
+.gif-bg-2 {
+    width: 72px;
+    top: 190px;
+    right: 25px;
+    animation: flotarDos 4s infinite alternate ease-in-out;
+}
+
+.gif-bg-3 {
+    width: 65px;
+    bottom: 100px;
+    left: 28px;
+    animation: flotarTres 5s infinite alternate ease-in-out;
+}
+
+.gif-bg-4 {
+    width: 55px;
+    bottom: 42px;
+    right: 90px;
+    animation: girarLogo 3s linear infinite;
+}
+
+.gif-bg-5 {
+    width: 60px;
+    top: 330px;
+    left: 6px;
+    animation: brillar 0.7s infinite alternate;
+}
+
+.gif-bg-6 {
+    width: 125px;
+    top: 430px;
+    right: 4px;
+    animation: temblor 0.25s infinite;
+}
+
+.gif-bg-7 {
+    width: 85px;
+    top: 95px;
+    right: 170px;
+    animation: saltar 0.9s infinite alternate;
+}
+
+.gif-bg-8 {
+    width: 70px;
+    bottom: 155px;
+    right: 30px;
+    animation: girarLogo 2.5s linear infinite;
+}
+
+.gif-bg-9 {
+    width: 75px;
+    top: 520px;
+    left: 20px;
+    animation: flotarDos 5s infinite alternate ease-in-out;
+}
+
+.gif-bg-10 {
+    width: 90px;
+    bottom: 35px;
+    left: 50px;
+    animation: flotarUno 4.5s infinite alternate ease-in-out;
+}
+
+
+/* ==================================================
+CONTENEDOR GENERAL
+================================================== */
+
+.pagina {
+    position: relative;
+    z-index: 10;
+    width: 95%;
+    max-width: 1400px;
+    margin: 20px auto;
+    border: 4px ridge var(--cyan);
+    background: rgba(210, 245, 255, 0.88);
+    box-shadow:
+        0 0 20px var(--cyan),
+        0 0 40px rgba(255, 0, 255, 0.5);
+}
+
+
+/* ==================================================
+BARRA SUPERIOR ESTILO WINDOWS XP
+================================================== */
+
+.barra-superior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    color: var(--blanco);
+    background: linear-gradient(
+        to bottom,
+        #6db9ff,
+        #0066ff 45%,
+        #0047b8 46%,
+        #003c99
+    );
+    border-bottom: 4px solid #003070;
+    text-shadow: 2px 2px 0 var(--negro);
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-animado {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background: radial-gradient(circle, var(--amarillo), var(--rosa), var(--cyan));
+    border: 3px solid var(--blanco);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    animation: girarLogo 3s linear infinite;
+    box-shadow: 0 0 15px var(--amarillo);
+}
+
+.barra-superior h1 {
+    font-family: Impact, Verdana, sans-serif;
+    letter-spacing: 1px;
+    font-size: 32px;
+}
+
+.barra-superior p {
+    font-size: 13px;
+}
+
+.contador-visitas {
+    background: var(--negro);
+    color: var(--verde-neon);
+    border: 2px inset var(--gris-xp);
+    padding: 8px 12px;
+    font-family: "Courier New", monospace;
+    font-size: 14px;
+}
+
+
+/* ==================================================
+MARQUEE OLD WEB
+================================================== */
+
+.marquee-box {
+    background: linear-gradient(to right, var(--rosa), var(--cyan), var(--verde-neon), var(--amarillo));
+    padding: 6px;
+    border-top: 3px solid var(--blanco);
+    border-bottom: 3px solid var(--negro);
+    font-family: "Comic Sans MS", Verdana, sans-serif;
+    font-weight: bold;
+    color: var(--negro);
+    text-shadow: 1px 1px 0 var(--blanco);
+}
+
+
+/* ==================================================
+NAVBAR Y2K
+================================================== */
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 14px;
+    background:
+        linear-gradient(to bottom, rgba(255,255,255,0.9), rgba(94,223,255,0.8)),
+        repeating-linear-gradient(
+            45deg,
+            rgba(255, 0, 255, 0.25),
+            rgba(255, 0, 255, 0.25) 10px,
+            rgba(0, 255, 255, 0.25) 10px,
+            rgba(0, 255, 255, 0.25) 20px
+        );
+    border-bottom: 4px double var(--azul-windows);
+}
+
+.navbar a {
+    text-decoration: none;
+    color: var(--blanco);
+    font-weight: bold;
+    padding: 10px 16px;
+    border-radius: 18px;
+    border: 2px outset var(--blanco);
+    background: linear-gradient(
+        to bottom,
+        #ffffff 0%,
+        #9eeeff 20%,
+        #008cff 50%,
+        #0044aa 100%
+    );
+    box-shadow:
+        inset 0 2px 4px rgba(255,255,255,0.9),
+        0 4px 0 #002f80,
+        0 0 10px rgba(0,255,255,0.8);
+    text-shadow: 1px 1px 0 var(--negro);
+    transition: all 0.2s ease;
+}
+
+.navbar a:hover {
+    transform: scale(1.15) rotate(-2deg);
+    background: linear-gradient(
+        to bottom,
+        #ffffff,
+        var(--amarillo),
+        var(--rosa)
+    );
+    color: var(--negro);
+    text-shadow: 1px 1px 0 var(--blanco);
+    box-shadow:
+        0 0 15px var(--rosa),
+        0 0 25px var(--cyan);
+}
+
+/* ==================================================
+DECORACIÓN OLD INTERNET / Y2K
+================================================== */
+
+.decoracion-old-web {
+    position: relative;
+    padding: 16px;
+    background: transparent;
+    border-top: 3px dashed var(--rosa);
+    border-bottom: 3px dashed var(--azul-windows);
+    overflow: visible;
+    z-index: 10;
+}
+
+.banner-under {
+    width: fit-content;
+    margin: 0 auto;
+    padding: 8px 22px;
+    font-family: Impact, Verdana, sans-serif;
+    font-size: 24px;
+    letter-spacing: 1px;
+    color: var(--negro);
+    background: repeating-linear-gradient(
+        45deg,
+        var(--amarillo),
+        var(--amarillo) 12px,
+        var(--negro) 12px,
+        var(--negro) 24px
+    );
+    border: 4px ridge var(--blanco);
+    text-shadow:
+        1px 1px 0 var(--blanco),
+        2px 2px 0 var(--rosa);
+    box-shadow:
+        0 0 12px var(--amarillo),
+        4px 4px 0 rgba(0,0,0,0.45);
+    animation: temblor 0.2s infinite;
+}
+
+.mini-gifs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 14px;
+}
+
+.gif-falso {
+    width: 58px;
+    height: 58px;
+    border-radius: 10px;
+    border: 3px outset var(--blanco);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    background: radial-gradient(circle, #ffffff, var(--cyan), var(--azul-windows));
+    box-shadow:
+        inset 0 2px 5px rgba(255,255,255,0.9),
+        0 0 12px var(--cyan);
+}
+
+.tierra {
+    animation: girarLogo 2.8s linear infinite;
+}
+
+.fuego {
+    animation: saltar 0.6s infinite alternate;
+    background: radial-gradient(circle, #ffffff, var(--amarillo), #ff5a00);
+}
+
+.calavera {
+    animation: parpadeo 0.7s infinite;
+    background: radial-gradient(circle, #ffffff, #b6b6b6, #000000);
+    color: var(--blanco);
+}
+
+.rayo {
+    animation: brillar 0.5s infinite alternate;
+    background: radial-gradient(circle, #ffffff, var(--amarillo), var(--rosa));
+}
+
+.sticker {
+    position: absolute;
+    z-index: 5;
+    font-family: Impact, Verdana, sans-serif;
+    color: var(--blanco);
+    border: 3px solid var(--blanco);
+    box-shadow:
+        0 0 10px var(--rosa),
+        3px 3px 0 var(--negro);
+    text-shadow: 2px 2px 0 var(--negro);
+}
+
+.sticker-uno {
+    top: 10px;
+    left: 20px;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    background: radial-gradient(circle, var(--amarillo), var(--rosa));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    animation: girarLogo 4s linear infinite;
+}
+
+.sticker-dos {
+    top: 18px;
+    right: 35px;
+    padding: 8px 12px;
+    background: var(--rosa);
+    transform: rotate(8deg);
+    animation: saltar 0.8s infinite alternate;
+}
+
+.sticker-tres {
+    bottom: 12px;
+    left: 80px;
+    padding: 6px 10px;
+    background: var(--verde-neon);
+    color: var(--negro);
+    text-shadow: 1px 1px 0 var(--blanco);
+    transform: rotate(-8deg);
+}
+
+/* ==================================================
+CONTENIDO PRINCIPAL
+================================================== */
+
+.contenedor-principal {
+    display: grid;
+    grid-template-columns: 230px 1fr 230px;
+    gap: 16px;
+    padding: 18px;
+}
+
+
+/* ==================================================
+SIDEBARS
+================================================== */
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+
+/* ==================================================
+VENTANAS ESTILO WINDOWS XP
+================================================== */
+
+.ventana-xp {
+    border: 3px solid #1b5dce;
+    background: var(--gris-xp);
+    box-shadow:
+        4px 4px 0 rgba(0,0,0,0.45),
+        inset 0 0 12px rgba(255,255,255,0.8);
+}
+
+.titulo-ventana {
+    background: linear-gradient(to bottom, #5ca9ff, #0057d9);
+    color: var(--blanco);
+    padding: 7px 10px;
+    font-weight: bold;
+    font-size: 14px;
+    text-shadow: 1px 1px 0 var(--negro);
+    border-bottom: 2px solid #003070;
+}
+
+.contenido-ventana {
+    padding: 12px;
+    background:
+        linear-gradient(135deg, rgba(255,255,255,0.85), rgba(220,245,255,0.8));
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.contenido-ventana ul {
+    padding-left: 18px;
+}
+
+.contenido-ventana li {
+    margin-bottom: 5px;
+}
+
+
+/* ==================================================
+BADGES OLD INTERNET
+================================================== */
+
+.badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.badges span {
+    display: inline-block;
+    padding: 5px 7px;
+    background: var(--negro);
+    color: var(--verde-neon);
+    border: 2px dashed var(--cyan);
+    font-family: "Courier New", monospace;
+    font-size: 11px;
+    box-shadow: 0 0 8px var(--verde-neon);
+}
+
+
+/* ==================================================
+HERO HOME
+================================================== */
+
+.contenido-home {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.hero-y2k {
+    display: grid;
+    grid-template-columns: 1fr 260px;
+    gap: 18px;
+    padding: 24px;
+    border: 4px ridge var(--rosa);
+    background:
+        linear-gradient(135deg, rgba(255,255,255,0.88), rgba(0,255,255,0.35)),
+        radial-gradient(circle at top right, rgba(255,0,255,0.5), transparent 35%);
+    box-shadow:
+        inset 0 0 30px rgba(255,255,255,0.9),
+        0 0 20px rgba(255,0,255,0.7);
+}
+
+.texto-hero h2 {
+    font-family: Impact, Verdana, sans-serif;
+    font-size: 44px;
+    line-height: 1;
+    color: var(--azul-profundo);
+    text-shadow:
+        2px 2px 0 var(--blanco),
+        4px 4px 0 var(--rosa);
+    margin-bottom: 10px;
+}
+
+.texto-hero h3 {
+    font-family: "Comic Sans MS", Verdana, sans-serif;
+    font-size: 30px;
+    color: var(--rosa);
+    text-shadow:
+        2px 2px 0 var(--amarillo),
+        3px 3px 0 var(--negro);
+    margin-bottom: 8px;
+}
+
+.titulo-profesional {
+    display: inline-block;
+    padding: 6px 10px;
+    margin-bottom: 12px;
+    color: var(--blanco);
+    background: linear-gradient(to right, var(--azul-windows), var(--morado));
+    border: 2px outset var(--blanco);
+    font-weight: bold;
+}
+
+.texto-hero p {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.ubicacion {
+    font-weight: bold;
+    color: var(--azul-profundo);
+}
+
+
+/* ==================================================
+FOTO HERO
+================================================== */
+
+.foto-hero {
+    text-align: center;
+    background: rgba(255,255,255,0.7);
+    border: 3px double var(--azul-windows);
+    padding: 12px;
+    box-shadow: 4px 4px 0 rgba(0,0,0,0.35);
+}
+
+.foto-hero img {
+    width: 100%;
+    max-width: 220px;
+    height: 260px;
+    object-fit: cover;
+    border: 4px ridge var(--cyan);
+    background: var(--blanco);
+}
+
+.foto-hero p {
+    font-family: "Courier New", monospace;
+    background: var(--negro);
+    color: var(--verde-neon);
+    padding: 5px;
+    margin-top: 8px;
+}
+
+
+/* ==================================================
+BOTONES HERO
+================================================== */
+
+.botones-hero {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.botones-hero a {
+    text-decoration: none;
+    color: var(--negro);
+    font-weight: bold;
+    padding: 12px 18px;
+    border-radius: 24px;
+    border: 3px outset var(--blanco);
+    background: linear-gradient(to bottom, #ffffff, var(--amarillo), var(--rosa));
+    box-shadow:
+        inset 0 2px 5px rgba(255,255,255,0.9),
+        0 5px 0 #870087,
+        0 0 15px var(--rosa);
+    transition: all 0.2s ease;
+}
+
+.botones-hero a:hover {
+    transform: translateY(-4px) scale(1.08);
+    background: linear-gradient(to bottom, #ffffff, var(--cyan), var(--verde-neon));
+    box-shadow:
+        0 0 15px var(--cyan),
+        0 0 25px var(--verde-neon);
+}
+
+
+/* ==================================================
+PANEL DESTACADO
+================================================== */
+
+.panel-destacado {
+    padding: 20px;
+    border: 4px double var(--azul-windows);
+    background:
+        linear-gradient(135deg, rgba(255,255,255,0.85), rgba(214,228,240,0.9)),
+        repeating-linear-gradient(
+            -45deg,
+            rgba(0,255,255,0.15),
+            rgba(0,255,255,0.15) 8px,
+            rgba(255,0,255,0.15) 8px,
+            rgba(255,0,255,0.15) 16px
+        );
+    box-shadow: 5px 5px 0 rgba(0,0,0,0.35);
+}
+
+.panel-destacado h2 {
+    font-family: Impact, Verdana, sans-serif;
+    color: var(--azul-profundo);
+    font-size: 32px;
+    text-shadow:
+        2px 2px 0 var(--blanco),
+        3px 3px 0 var(--cyan);
+    margin-bottom: 16px;
+}
+
+.grid-destacados {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+}
+
+.grid-destacados article {
+    padding: 15px;
+    background: rgba(255,255,255,0.85);
+    border: 3px outset var(--cyan);
+    box-shadow: 4px 4px 0 rgba(0,0,0,0.25);
+    transition: all 0.2s ease;
+}
+
+.grid-destacados article:hover {
+    transform: rotate(1deg) scale(1.03);
+    background: linear-gradient(135deg, #ffffff, #d7ffff);
+    box-shadow:
+        0 0 15px var(--cyan),
+        5px 5px 0 rgba(0,0,0,0.35);
+}
+
+.grid-destacados h3 {
+    color: var(--rosa);
+    margin-bottom: 8px;
+    font-family: "Comic Sans MS", Verdana, sans-serif;
+}
+
+
+/* ==================================================
+BLINK TEXT
+================================================== */
+
+.blink {
+    color: var(--verde-neon);
+    background: var(--negro);
+    display: inline-block;
+    padding: 4px 8px;
+    font-family: "Courier New", monospace;
+    animation: parpadeo 0.8s infinite;
+}
+
+/* ==================================================
+ULTIMAS ACTUALIZACIONES
+================================================== */
+
+.actualizaciones-old {
+    padding: 20px;
+    border: 4px ridge var(--amarillo);
+    background:
+        linear-gradient(135deg, rgba(255,255,255,0.88), rgba(255,0,255,0.18)),
+        repeating-linear-gradient(
+            0deg,
+            rgba(0,255,255,0.16),
+            rgba(0,255,255,0.16) 6px,
+            rgba(255,255,255,0.25) 6px,
+            rgba(255,255,255,0.25) 12px
+        );
+    box-shadow:
+        5px 5px 0 rgba(0,0,0,0.38),
+        0 0 18px rgba(255,242,0,0.7);
+}
+
+.titulo-actualizaciones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 18px;
+    text-align: center;
+}
+
+.titulo-actualizaciones h2 {
+    font-family: Impact, Verdana, sans-serif;
+    font-size: 30px;
+    color: var(--azul-profundo);
+    text-shadow:
+        2px 2px 0 var(--blanco),
+        4px 4px 0 var(--rosa);
+}
+
+.titulo-actualizaciones span {
+    font-size: 28px;
+    color: var(--amarillo);
+    text-shadow:
+        1px 1px 0 var(--negro),
+        0 0 10px var(--rosa);
+    animation: girarLogo 3s linear infinite;
+}
+
+.lista-actualizaciones {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+}
+
+.update-card {
+    position: relative;
+    padding: 16px;
+    background:
+        linear-gradient(to bottom, #ffffff, #dfffff);
+    border: 3px outset var(--cyan);
+    box-shadow:
+        4px 4px 0 rgba(0,0,0,0.35),
+        inset 0 0 12px rgba(255,255,255,0.95);
+    transition: all 0.2s ease;
+}
+
+.update-card:hover {
+    transform: translateX(6px) rotate(-1deg);
+    background:
+        linear-gradient(to bottom, #ffffff, #fff7b8);
+    border-color: var(--rosa);
+    box-shadow:
+        0 0 15px var(--rosa),
+        6px 6px 0 rgba(0,0,0,0.45);
+}
+
+.update-fecha {
+    display: inline-block;
+    margin-bottom: 8px;
+    padding: 4px 8px;
+    font-family: "Courier New", monospace;
+    font-size: 12px;
+    font-weight: bold;
+    color: var(--verde-neon);
+    background: var(--negro);
+    border: 2px inset var(--gris-xp);
+}
+
+.update-card h3 {
+    margin-bottom: 8px;
+    font-family: "Comic Sans MS", Verdana, sans-serif;
+    color: var(--rosa);
+    text-shadow: 1px 1px 0 var(--amarillo);
+}
+
+.update-card p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+
+.update-card a {
+    display: inline-block;
+    padding: 8px 14px;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--blanco);
+    background: linear-gradient(to bottom, #8edcff, #0066ff, #003c99);
+    border: 2px outset var(--blanco);
+    border-radius: 16px;
+    text-shadow: 1px 1px 0 var(--negro);
+    box-shadow:
+        inset 0 2px 4px rgba(255,255,255,0.8),
+        0 3px 0 #001f66;
+}
+
+.update-card a:hover {
+    color: var(--negro);
+    background: linear-gradient(to bottom, #ffffff, var(--amarillo), var(--rosa));
+    text-shadow: 1px 1px 0 var(--blanco);
+}
+
+/* ==================================================
+FOOTER
+================================================== */
+
+.footer-y2k {
+    text-align: center;
+    padding: 18px;
+    background: linear-gradient(to bottom, #003c99, #001f66);
+    color: var(--blanco);
+    border-top: 4px solid var(--cyan);
+    text-shadow: 1px 1px 0 var(--negro);
+    font-size: 13px;
+}
+
+.footer-y2k p {
+    margin: 5px 0;
+}
+
+
+/* ==================================================
+ANIMACIONES
+================================================== */
+
+@keyframes girarLogo {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes parpadeo {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes saltar {
+    from {
+        transform: translateY(0) scale(1);
+    }
+
+    to {
+        transform: translateY(-8px) scale(1.08);
+    }
+}
+
+@keyframes brillar {
+    from {
+        filter: brightness(1);
+        transform: scale(1);
+    }
+
+    to {
+        filter: brightness(1.6);
+        transform: scale(1.12);
+    }
+}
+
+@keyframes temblor {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    25% {
+        transform: translate(1px, -1px);
+    }
+
+    50% {
+        transform: translate(-1px, 1px);
+    }
+
+    75% {
+        transform: translate(1px, 1px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes flotarUno {
+    from {
+        transform: translate(0, 0) rotate(-5deg);
+    }
+
+    to {
+        transform: translate(18px, 24px) rotate(8deg);
+    }
+}
+
+@keyframes flotarDos {
+    from {
+        transform: translate(0, 0) scale(1);
+    }
+
+    to {
+        transform: translate(-22px, 18px) scale(1.1);
+    }
+}
+
+@keyframes flotarTres {
+    from {
+        transform: translate(0, 0) rotate(4deg);
+    }
+
+    to {
+        transform: translate(25px, -18px) rotate(-6deg);
+    }
+}
+
+
+/* ==================================================
+RESPONSIVE
+================================================== */
+
+@media screen and (max-width: 1000px) {
+    .contenedor-principal {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-y2k {
+        grid-template-columns: 1fr;
+    }
+
+    .foto-hero {
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
+    .grid-destacados {
+        grid-template-columns: 1fr;
+    }
+
+    .barra-superior {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .pagina {
+        width: 100%;
+        margin: 0;
+    }
+
+    .barra-superior h1 {
+        font-size: 24px;
+    }
+
+    .texto-hero h2 {
+        font-size: 32px;
+    }
+
+    .texto-hero h3 {
+        font-size: 24px;
+    }
+
+    .navbar a {
+        width: 100%;
+        text-align: center;
+    }
+}
