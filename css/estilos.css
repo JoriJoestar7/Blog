@@ -1131,230 +1131,6 @@ ULTIMAS ACTUALIZACIONES
     background: linear-gradient(to bottom, #ffffff, var(--amarillo), var(--rosa));
     text-shadow: 1px 1px 0 var(--blanco);
 }
-/* ==================================================
-PAGINA PERFIL
-================================================== */
-
-.perfil-layout {
-    display: grid;
-    grid-template-columns: 230px 1fr 230px;
-    gap: 16px;
-    padding: 18px;
-}
-
-.perfil-sidebar {
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-}
-
-.perfil-centro {
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-}
-
-
-/* ==================================================
-PERFIL MINI SIDEBAR
-================================================== */
-
-.perfil-mini {
-    text-align: center;
-}
-
-.perfil-mini img {
-    width: 140px;
-    height: 150px;
-    object-fit: cover;
-    border: 4px ridge var(--cyan);
-    background: var(--blanco);
-    margin-bottom: 8px;
-}
-
-.perfil-mini h3 {
-    font-family: "Comic Sans MS", Verdana, sans-serif;
-    color: var(--rosa);
-    text-shadow:
-        1px 1px 0 var(--amarillo),
-        2px 2px 0 var(--negro);
-    margin-bottom: 8px;
-}
-
-
-/* ==================================================
-VENTANA PRINCIPAL PERFIL
-================================================== */
-
-.perfil-ventana-principal {
-    border: 4px ridge var(--azul-windows);
-    background:
-        linear-gradient(135deg, rgba(255,255,255,0.92), rgba(190,240,255,0.85)),
-        url("../img/backgrounds/stars.gif");
-    box-shadow:
-        6px 6px 0 rgba(0,0,0,0.35),
-        0 0 22px rgba(0,255,255,0.65);
-    overflow: hidden;
-}
-
-.perfil-barra-xp {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 7px 10px;
-    color: var(--blanco);
-    background: linear-gradient(to bottom, #69b7ff, #0066ff 45%, #003c99);
-    border-bottom: 3px solid #002a75;
-    font-family: Tahoma, Verdana, sans-serif;
-    font-weight: bold;
-    text-shadow: 1px 1px 0 var(--negro);
-}
-
-.perfil-hero {
-    display: grid;
-    grid-template-columns: 1fr 260px;
-    gap: 20px;
-    padding: 22px;
-    align-items: center;
-}
-
-.perfil-etiqueta {
-    display: inline-block;
-    margin-bottom: 10px;
-    padding: 5px 8px;
-    color: var(--verde-neon);
-    background: var(--negro);
-    border: 2px inset var(--gris-xp);
-    font-family: "Courier New", monospace;
-    font-size: 12px;
-}
-
-.perfil-texto h2 {
-    font-family: Impact, Verdana, sans-serif;
-    font-size: 48px;
-    line-height: 1;
-    color: var(--azul-profundo);
-    text-shadow:
-        2px 2px 0 var(--blanco),
-        4px 4px 0 var(--rosa);
-    margin-bottom: 8px;
-}
-
-.perfil-texto h3 {
-    display: inline-block;
-    margin-bottom: 14px;
-    padding: 7px 12px;
-    color: var(--blanco);
-    background: linear-gradient(to right, var(--azul-windows), var(--morado), var(--rosa));
-    border: 2px outset var(--blanco);
-    font-family: "Comic Sans MS", Verdana, sans-serif;
-    font-size: 19px;
-    text-shadow: 1px 1px 0 var(--negro);
-}
-
-.perfil-texto p {
-    margin-bottom: 12px;
-    font-size: 15px;
-    line-height: 1.6;
-}
-
-.perfil-foto-grande {
-    padding: 12px;
-    text-align: center;
-    background: rgba(255,255,255,0.8);
-    border: 3px double var(--azul-windows);
-    box-shadow: 5px 5px 0 rgba(0,0,0,0.35);
-    transform: rotate(2deg);
-}
-
-.perfil-foto-grande img {
-    width: 100%;
-    max-width: 220px;
-    height: 270px;
-    object-fit: cover;
-    border: 4px ridge var(--cyan);
-    background: var(--blanco);
-}
-
-.perfil-foto-grande p {
-    margin-top: 8px;
-    padding: 5px;
-    color: var(--verde-neon);
-    background: var(--negro);
-    font-family: "Courier New", monospace;
-    font-size: 12px;
-}
-
-
-/* ==================================================
-BOTONES PERFIL
-================================================== */
-
-.perfil-botones {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-    margin-top: 16px;
-}
-
-.perfil-botones a {
-    text-decoration: none;
-    color: var(--negro);
-    font-weight: bold;
-    padding: 11px 17px;
-    border-radius: 24px;
-    border: 3px outset var(--blanco);
-    background: linear-gradient(to bottom, #ffffff, var(--amarillo), var(--rosa));
-    box-shadow:
-        inset 0 2px 5px rgba(255,255,255,0.9),
-        0 5px 0 #870087,
-        0 0 15px var(--rosa);
-    transition: all 0.2s ease;
-}
-
-.perfil-botones a:hover {
-    transform: translateY(-4px) scale(1.08);
-    background: linear-gradient(to bottom, #ffffff, var(--cyan), var(--verde-neon));
-    box-shadow:
-        0 0 15px var(--cyan),
-        0 0 25px var(--verde-neon);
-}
-
-
-/* ==================================================
-BLOQUES PERFIL
-================================================== */
-
-.perfil-bloque {
-    padding: 20px;
-    border: 4px double var(--azul-windows);
-    background:
-        linear-gradient(135deg, rgba(255,255,255,0.9), rgba(214,246,255,0.88)),
-        repeating-linear-gradient(
-            -45deg,
-            rgba(0,255,255,0.15),
-            rgba(0,255,255,0.15) 8px,
-            rgba(255,0,255,0.12) 8px,
-            rgba(255,0,255,0.12) 16px
-        );
-    box-shadow: 5px 5px 0 rgba(0,0,0,0.35);
-}
-
-.perfil-bloque h2 {
-    margin-bottom: 12px;
-    font-family: Impact, Verdana, sans-serif;
-    color: var(--azul-profundo);
-    font-size: 32px;
-    text-shadow:
-        2px 2px 0 var(--blanco),
-        3px 3px 0 var(--cyan);
-}
-
-.perfil-bloque p {
-    font-size: 15px;
-    line-height: 1.6;
-    margin-bottom: 10px;
-}
 
 
 /* ==================================================
@@ -1467,306 +1243,6 @@ RESPONSIVE PERFIL
         text-align: center;
     }
 }
-/* ==================================================
-PAGINA PROYECTOS
-================================================== */
-
-.proyectos-layout {
-    display: grid;
-    grid-template-columns: 230px 1fr 230px;
-    gap: 16px;
-    padding: 18px;
-}
-
-.proyectos-sidebar {
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-}
-
-.proyectos-centro {
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-}
-
-
-/* ==================================================
-CATEGORIAS PROYECTOS
-================================================== */
-
-.categorias-proyectos {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-.categorias-proyectos a {
-    display: block;
-    padding: 8px 10px;
-    color: var(--blanco);
-    text-decoration: none;
-    font-weight: bold;
-    background: linear-gradient(to bottom, #8edcff, #0066ff, #003c99);
-    border: 2px outset var(--blanco);
-    text-shadow: 1px 1px 0 var(--negro);
-    box-shadow: 3px 3px 0 rgba(0,0,0,0.35);
-}
-
-.categorias-proyectos a:hover {
-    color: var(--negro);
-    background: linear-gradient(to bottom, #ffffff, var(--amarillo), var(--rosa));
-    transform: translateX(5px) rotate(-1deg);
-}
-
-
-/* ==================================================
-HERO PROYECTOS
-================================================== */
-
-.proyectos-hero {
-    border: 4px ridge var(--azul-windows);
-    background:
-        linear-gradient(135deg, rgba(255,255,255,0.92), rgba(190,240,255,0.86)),
-        url("../img/backgrounds/stars.gif");
-    box-shadow:
-        6px 6px 0 rgba(0,0,0,0.35),
-        0 0 22px rgba(0,255,255,0.65);
-    overflow: hidden;
-}
-
-.proyectos-barra-xp {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 7px 10px;
-    color: var(--blanco);
-    background: linear-gradient(to bottom, #69b7ff, #0066ff 45%, #003c99);
-    border-bottom: 3px solid #002a75;
-    font-family: Tahoma, Verdana, sans-serif;
-    font-weight: bold;
-    text-shadow: 1px 1px 0 var(--negro);
-}
-
-.proyectos-hero-contenido {
-    padding: 24px;
-}
-
-.proyectos-hero-contenido h2 {
-    margin-bottom: 12px;
-    font-family: Impact, Verdana, sans-serif;
-    font-size: 46px;
-    line-height: 1;
-    color: var(--azul-profundo);
-    text-shadow:
-        2px 2px 0 var(--blanco),
-        4px 4px 0 var(--rosa);
-}
-
-.proyectos-hero-contenido p {
-    font-size: 15px;
-    line-height: 1.6;
-}
-
-
-/* ==================================================
-FILTROS PROYECTOS
-================================================== */
-
-.filtros-proyectos {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 10px;
-    padding: 14px;
-    background:
-        linear-gradient(to right, var(--rosa), var(--cyan), var(--amarillo));
-    border: 4px ridge var(--blanco);
-    box-shadow: 5px 5px 0 rgba(0,0,0,0.35);
-}
-
-.filtros-proyectos span {
-    font-family: Impact, Verdana, sans-serif;
-    font-size: 20px;
-    color: var(--negro);
-    text-shadow: 1px 1px 0 var(--blanco);
-}
-
-.filtros-proyectos a {
-    padding: 7px 12px;
-    color: var(--verde-neon);
-    background: var(--negro);
-    border: 2px dashed var(--cyan);
-    font-family: "Courier New", monospace;
-    font-size: 12px;
-    font-weight: bold;
-    text-decoration: none;
-    box-shadow: 0 0 8px rgba(57,255,20,0.6);
-}
-
-.filtros-proyectos a:hover {
-    color: var(--negro);
-    background: var(--verde-neon);
-    border-color: var(--rosa);
-    transform: scale(1.08);
-}
-
-
-/* ==================================================
-GRID PROYECTOS
-================================================== */
-
-.grid-proyectos {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 18px;
-}
-
-.proyecto-card {
-    background:
-        linear-gradient(to bottom, rgba(255,255,255,0.94), rgba(216,246,255,0.9));
-    border: 4px outset var(--blanco);
-    box-shadow:
-        6px 6px 0 rgba(0,0,0,0.38),
-        0 0 16px rgba(0,255,255,0.4);
-    transition: all 0.2s ease;
-    overflow: hidden;
-}
-
-.proyecto-card:hover {
-    transform: translateY(-7px) rotate(-1deg) scale(1.02);
-    border-color: var(--rosa);
-    box-shadow:
-        0 0 18px var(--rosa),
-        0 0 28px var(--cyan),
-        7px 7px 0 rgba(0,0,0,0.5);
-}
-
-.proyecto-img {
-    min-height: 170px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-bottom: 4px ridge var(--cyan);
-    position: relative;
-    overflow: hidden;
-}
-
-.proyecto-img::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background:
-        repeating-linear-gradient(
-            45deg,
-            rgba(255,255,255,0.2),
-            rgba(255,255,255,0.2) 10px,
-            rgba(0,0,0,0.08) 10px,
-            rgba(0,0,0,0.08) 20px
-        );
-}
-
-.proyecto-img span {
-    position: relative;
-    z-index: 2;
-    padding: 8px 14px;
-    color: var(--blanco);
-    background: rgba(0,0,0,0.76);
-    border: 3px ridge var(--blanco);
-    font-family: Impact, Verdana, sans-serif;
-    font-size: 30px;
-    letter-spacing: 2px;
-    text-shadow:
-        2px 2px 0 var(--negro),
-        0 0 10px var(--cyan);
-}
-
-.proyecto-img-uno {
-    background:
-        radial-gradient(circle at top left, var(--rosa), transparent 35%),
-        linear-gradient(135deg, var(--cyan), var(--azul-windows), var(--morado));
-}
-
-.proyecto-img-dos {
-    background:
-        radial-gradient(circle at top right, var(--amarillo), transparent 35%),
-        linear-gradient(135deg, var(--rosa), var(--cyan));
-}
-
-.proyecto-img-tres {
-    background:
-        radial-gradient(circle at center, var(--verde-neon), transparent 28%),
-        linear-gradient(135deg, #111111, var(--azul-windows), var(--cyan));
-}
-
-.proyecto-img-cuatro {
-    background:
-        radial-gradient(circle at bottom left, var(--amarillo), transparent 30%),
-        linear-gradient(135deg, var(--azul-windows), #001f66, var(--cyan));
-}
-
-.proyecto-img-cinco {
-    background:
-        radial-gradient(circle at top, var(--cyan), transparent 30%),
-        linear-gradient(135deg, var(--negro), var(--rosa), var(--morado));
-}
-
-.proyecto-img-seis {
-    background:
-        radial-gradient(circle at center, var(--amarillo), transparent 32%),
-        linear-gradient(135deg, var(--verde-neon), var(--cyan), var(--rosa));
-}
-
-.proyecto-info {
-    padding: 16px;
-}
-
-.proyecto-tag {
-    display: inline-block;
-    margin-bottom: 8px;
-    padding: 4px 8px;
-    color: var(--verde-neon);
-    background: var(--negro);
-    border: 2px inset var(--gris-xp);
-    font-family: "Courier New", monospace;
-    font-size: 12px;
-}
-
-.proyecto-info h3 {
-    margin-bottom: 8px;
-    font-family: "Comic Sans MS", Verdana, sans-serif;
-    color: var(--rosa);
-    font-size: 22px;
-    text-shadow: 1px 1px 0 var(--amarillo);
-}
-
-.proyecto-info p {
-    font-size: 14px;
-    line-height: 1.5;
-    margin-bottom: 12px;
-}
-
-.proyecto-info a {
-    display: inline-block;
-    padding: 8px 14px;
-    color: var(--blanco);
-    text-decoration: none;
-    font-weight: bold;
-    background: linear-gradient(to bottom, #8edcff, #0066ff, #003c99);
-    border: 2px outset var(--blanco);
-    border-radius: 16px;
-    text-shadow: 1px 1px 0 var(--negro);
-    box-shadow:
-        inset 0 2px 4px rgba(255,255,255,0.8),
-        0 3px 0 #001f66;
-}
-
-.proyecto-info a:hover {
-    color: var(--negro);
-    background: linear-gradient(to bottom, #ffffff, var(--amarillo), var(--rosa));
-    text-shadow: 1px 1px 0 var(--blanco);
-}
-
 
 /* ==================================================
 RESPONSIVE PROYECTOS
@@ -2188,5 +1664,4583 @@ RESPONSIVE
     .navbar a {
         width: 100%;
         text-align: center;
+    }
+}
+/* ==================================================
+EDUCACION - ESTILO CD-ROM EDUCATIVO RETRO
+================================================== */
+
+body.pagina-educacion {
+    min-height: 100vh;
+    color: #06121f;
+    background-color: #b9ecff;
+    background-image:
+        radial-gradient(circle at 15% 20%, rgba(255,255,255,0.9), transparent 16%),
+        radial-gradient(circle at 80% 10%, rgba(0,255,255,0.45), transparent 18%),
+        radial-gradient(circle at 70% 80%, rgba(255,0,255,0.25), transparent 20%),
+        linear-gradient(135deg, #b9ecff, #ffffff, #d9f7ff);
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+body.pagina-educacion::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -2;
+    background:
+        linear-gradient(rgba(0,80,160,0.08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,80,160,0.08) 1px, transparent 1px);
+    background-size: 28px 28px;
+}
+
+body.pagina-educacion::after {
+    content: "EDUCATION CD-ROM / DIGITAL SKILLS / LEARNING SYSTEM";
+    position: fixed;
+    right: -180px;
+    bottom: 80px;
+    z-index: -1;
+    font-family: Impact, Verdana, sans-serif;
+    font-size: 58px;
+    letter-spacing: 4px;
+    color: rgba(0, 100, 180, 0.08);
+    transform: rotate(-10deg);
+    white-space: nowrap;
+}
+
+
+/* ==================================================
+EDUCACION - WRAPPER
+================================================== */
+
+.educacion-wrapper {
+    width: 92%;
+    max-width: 1250px;
+    margin: 28px auto;
+    background:
+        linear-gradient(135deg, rgba(255,255,255,0.88), rgba(180,235,255,0.82));
+    border: 5px ridge #ffffff;
+    box-shadow:
+        0 0 25px rgba(0,180,255,0.55),
+        10px 10px 0 rgba(0,70,120,0.28);
+}
+
+
+/* ==================================================
+EDUCACION - HEADER DIFERENTE
+================================================== */
+
+.pagina-educacion .barra-superior {
+    background:
+        linear-gradient(to bottom, #ffffff, #7bdfff 35%, #0098d8 70%, #0069a8);
+    color: #002d4d;
+    border-bottom: 5px ridge #ffffff;
+    text-shadow: 1px 1px 0 #ffffff;
+}
+
+.pagina-educacion .logo-animado {
+    background:
+        conic-gradient(
+            from 90deg,
+            #ffffff,
+            #9fffff,
+            #caa8ff,
+            #ffffff,
+            #70e6ff,
+            #ffffff
+        );
+    color: #003c66;
+    border: 4px ridge #ffffff;
+    box-shadow:
+        0 0 20px rgba(0,255,255,0.9),
+        inset 0 0 15px rgba(255,255,255,0.9);
+}
+
+.pagina-educacion .contador-visitas {
+    background: #ffffff;
+    color: #0069a8;
+    border: 3px inset #7bdfff;
+    text-shadow: none;
+}
+
+
+/* ==================================================
+EDUCACION - MARQUEE Y NAVBAR
+================================================== */
+
+.pagina-educacion .marquee-box {
+    background:
+        linear-gradient(to right, #ffffff, #fff200, #7dffef, #ffffff);
+    color: #003c66;
+    border-top: 3px solid #ffffff;
+    border-bottom: 3px solid #0098d8;
+    text-shadow: 1px 1px 0 #ffffff;
+}
+
+.pagina-educacion .navbar {
+    background:
+        linear-gradient(to bottom, #ffffff, #c7f7ff, #7bdfff);
+    border-bottom: 4px double #ffffff;
+}
+
+.pagina-educacion .navbar a {
+    color: #003c66;
+    background:
+        linear-gradient(to bottom, #ffffff, #d7ffff, #76dfff);
+    border: 3px outset #ffffff;
+    border-radius: 8px;
+    box-shadow:
+        inset 0 2px 5px rgba(255,255,255,0.95),
+        0 4px 0 #0088bd;
+    text-shadow: 1px 1px 0 #ffffff;
+}
+
+.pagina-educacion .navbar a:hover {
+    color: #000000;
+    background:
+        linear-gradient(to bottom, #ffffff, #fff200, #39ff14);
+    transform: translateY(-4px) rotate(1deg);
+}
+
+
+/* ==================================================
+EDUCACION - LAYOUT
+================================================== */
+
+.educacion-layout {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+
+/* ==================================================
+EDUCACION - HERO CD-ROM
+================================================== */
+
+.educacion-hero {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 28px;
+    align-items: center;
+    padding: 28px;
+    background:
+        linear-gradient(135deg, rgba(255,255,255,0.96), rgba(210,250,255,0.85));
+    border: 5px ridge #ffffff;
+    box-shadow:
+        8px 8px 0 rgba(0,90,130,0.28),
+        inset 0 0 30px rgba(0,255,255,0.25);
+    position: relative;
+    overflow: hidden;
+}
+
+.educacion-hero::before {
+    content: "EDU 2004";
+    position: absolute;
+    top: 20px;
+    right: -35px;
+    padding: 8px 45px;
+    background: #fff200;
+    color: #003c66;
+    border: 3px solid #003c66;
+    font-family: Impact, Verdana, sans-serif;
+    font-size: 22px;
+    transform: rotate(18deg);
+    box-shadow: 4px 4px 0 rgba(0,0,0,0.25);
+}
+
+.educacion-disco {
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    margin: 0 auto;
+    background:
+        radial-gradient(circle at center, #ffffff 0 12%, #9cf8ff 13% 18%, transparent 19%),
+        conic-gradient(
+            from 45deg,
+            #ffffff,
+            #8df7ff,
+            #d5b4ff,
+            #ffffff,
+            #fff200,
+            #ffffff,
+            #7df8ff
+        );
+    border: 6px ridge #ffffff;
+    box-shadow:
+        0 0 25px rgba(0,255,255,0.8),
+        inset 0 0 25px rgba(255,255,255,0.95);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: girarLogo 8s linear infinite;
+    position: relative;
+}
+
+.disco-centro {
+    position: absolute;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background: #ffffff;
+    border: 5px inset #7bdfff;
+}
+
+.educacion-disco span {
+    position: relative;
+    z-index: 2;
+    margin-top: 110px;
+    padding: 5px 8px;
+    background: rgba(0,0,0,0.75);
+    color: #39ff14;
+    font-family: "Courier New", monospace;
+    font-size: 12px;
+    text-align: center;
+}
+
+.educacion-label {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 5px 8px;
+    color: #39ff14;
+    background: #000000;
+    border: 2px inset #d6e4f0;
+    font-family: "Courier New", monospace;
+    font-size: 12px;
+}
+
+.educacion-hero-texto h2 {
+    margin-bottom: 10px;
+    font-family: Impact, Verdana, sans-serif;
+    font-size: 56px;
+    line-height: 0.95;
+    color: #0069a8;
+    text-shadow:
+        2px 2px 0 #ffffff,
+        5px 5px 0 #00ffff;
+}
+
+.educacion-hero-texto h3 {
+    display: inline-block;
+    margin-bottom: 14px;
+    padding: 7px 12px;
+    background: linear-gradient(to right, #0069a8, #00b8ff);
+    color: #ffffff;
+    border: 3px outset #ffffff;
+    font-family: "Comic Sans MS", Verdana, sans-serif;
+    text-shadow: 1px 1px 0 #000000;
+}
+
+.educacion-hero-texto p {
+    margin-bottom: 12px;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+
+/* ==================================================
+EDUCACION - FORMACION
+================================================== */
+
+.educacion-formacion {
+    border: 5px double #0098d8;
+    background:
+        linear-gradient(135deg, rgba(255,255,255,0.96), rgba(255,242,0,0.18));
+    box-shadow: 7px 7px 0 rgba(0,90,130,0.28);
+    overflow: hidden;
+}
+
+.educacion-titulo-barra {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 10px 14px;
+    background: linear-gradient(to right, #0069a8, #00d8ff, #ffffff);
+    color: #ffffff;
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+    text-shadow: 1px 1px 0 #000000;
+}
+
+.formacion-card {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 18px;
+    padding: 22px;
+    align-items: center;
+}
+
+.formacion-icono {
+    width: 86px;
+    height: 86px;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 44px;
+    background:
+        linear-gradient(to bottom, #ffffff, #7bdfff);
+    border: 4px outset #ffffff;
+    box-shadow:
+        5px 5px 0 rgba(0,0,0,0.25),
+        0 0 12px rgba(0,255,255,0.65);
+}
+
+.formacion-card h2 {
+    margin-bottom: 10px;
+    font-family: Impact, Verdana, sans-serif;
+    font-size: 34px;
+    color: #0069a8;
+    text-shadow: 2px 2px 0 #ffffff;
+}
+
+.formacion-card p {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.formacion-extra {
+    margin-top: 8px;
+    font-weight: bold;
+    color: #0057d9;
+}
+
+
+/* ==================================================
+EDUCACION - HABILIDADES
+================================================== */
+
+.educacion-habilidades,
+.educacion-progreso,
+.educacion-herramientas {
+    padding: 24px;
+    background:
+        linear-gradient(135deg, rgba(255,255,255,0.95), rgba(210,250,255,0.86));
+    border: 5px ridge #ffffff;
+    box-shadow: 7px 7px 0 rgba(0,90,130,0.28);
+}
+
+.educacion-habilidades h2,
+.educacion-progreso h2,
+.educacion-herramientas h2 {
+    margin-bottom: 18px;
+    font-family: Impact, Verdana, sans-serif;
+    font-size: 36px;
+    color: #0069a8;
+    text-shadow:
+        2px 2px 0 #ffffff,
+        4px 4px 0 #00ffff;
+}
+
+.habilidades-cd-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.habilidades-cd-grid article {
+    padding: 18px;
+    background:
+        linear-gradient(to bottom, #ffffff, #dfffff);
+    border: 4px outset #ffffff;
+    box-shadow:
+        5px 5px 0 rgba(0,90,130,0.25),
+        inset 0 0 14px rgba(255,255,255,0.9);
+    transition: all 0.2s ease;
+}
+
+.habilidades-cd-grid article:hover {
+    transform: translateY(-6px) rotate(-1deg);
+    background:
+        linear-gradient(to bottom, #ffffff, #fff7b8);
+    box-shadow:
+        0 0 18px rgba(0,255,255,0.8),
+        6px 6px 0 rgba(0,90,130,0.35);
+}
+
+.habilidad-numero {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 5px 8px;
+    background: #000000;
+    color: #39ff14;
+    border: 2px dashed #00ffff;
+    font-family: "Courier New", monospace;
+    font-size: 12px;
+}
+
+.habilidades-cd-grid h3 {
+    margin-bottom: 8px;
+    color: #ff00ff;
+    font-family: "Comic Sans MS", Verdana, sans-serif;
+    text-shadow: 1px 1px 0 #fff200;
+}
+
+.habilidades-cd-grid p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+/* ==================================================
+EDUCACION - PROGRESO
+================================================== */
+
+.progreso-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.progreso-item {
+    display: grid;
+    grid-template-columns: 170px 1fr;
+    gap: 14px;
+    align-items: center;
+}
+
+.progreso-item span {
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+    color: #003c66;
+}
+
+.barra-progreso {
+    height: 22px;
+    background: #ffffff;
+    border: 3px inset #7bdfff;
+    box-shadow: inset 0 0 8px rgba(0,0,0,0.15);
+    overflow: hidden;
+}
+
+.barra-progreso div {
+    height: 100%;
+    background:
+        linear-gradient(to right, #00ffff, #39ff14, #fff200);
+    box-shadow: 0 0 10px rgba(57,255,20,0.75);
+}
+
+
+/* ==================================================
+EDUCACION - CHIPS
+================================================== */
+
+.educacion-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.educacion-chips span {
+    padding: 8px 12px;
+    background: #000000;
+    color: #39ff14;
+    border: 2px dashed #00ffff;
+    font-family: "Courier New", monospace;
+    font-size: 13px;
+    box-shadow:
+        0 0 8px rgba(57,255,20,0.65),
+        inset 0 0 6px rgba(0,255,255,0.25);
+}
+
+.educacion-chips span:nth-child(even) {
+    color: #fff200;
+    border-color: #ff00ff;
+}
+
+
+/* ==================================================
+EDUCACION - FOOTER
+================================================== */
+
+.pagina-educacion .footer-y2k {
+    background:
+        linear-gradient(to bottom, #0098d8, #0069a8, #003c66);
+    border-top: 5px ridge #ffffff;
+}
+
+.pagina-educacion .footer-copy {
+    background: #003c66;
+}
+
+
+/* ==================================================
+RESPONSIVE EDUCACION
+================================================== */
+
+@media screen and (max-width: 1000px) {
+    .educacion-hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .habilidades-cd-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .formacion-card {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .formacion-icono {
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .educacion-wrapper {
+        width: 100%;
+        margin: 0;
+    }
+
+    .educacion-layout {
+        padding: 14px;
+    }
+
+    .educacion-hero {
+        padding: 18px;
+    }
+
+    .educacion-disco {
+        width: 190px;
+        height: 190px;
+    }
+
+    .educacion-hero-texto h2 {
+        font-size: 36px;
+    }
+
+    .habilidades-cd-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .progreso-item {
+        grid-template-columns: 1fr;
+    }
+
+    .educacion-titulo-barra {
+        flex-direction: column;
+        text-align: center;
+    }
+}   
+/* ==================================================
+EXPERIENCIA - ESTILO ARCADE / HISTORIAL PROFESIONAL
+================================================== */
+
+body.pagina-experiencia {
+    min-height: 100vh;
+    color: #ffffff;
+    background-color: #090014;
+    background-image:
+        radial-gradient(circle at 20% 20%, rgba(255,0,255,0.35), transparent 18%),
+        radial-gradient(circle at 80% 15%, rgba(0,255,255,0.35), transparent 18%),
+        radial-gradient(circle at 50% 80%, rgba(255,242,0,0.2), transparent 22%),
+        linear-gradient(135deg, #090014, #180033, #000000);
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+body.pagina-experiencia::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -2;
+    background:
+        linear-gradient(rgba(255,255,255,0.06) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.06) 1px, transparent 1px);
+    background-size: 34px 34px;
+}
+
+body.pagina-experiencia::after {
+    content: "CAREER MODE / EXPERIENCE / PRESS START";
+    position: fixed;
+    left: -120px;
+    bottom: 110px;
+    z-index: -1;
+    font-family: Impact, Verdana, sans-serif;
+    font-size: 64px;
+    letter-spacing: 5px;
+    color: rgba(255,255,255,0.06);
+    transform: rotate(-10deg);
+    white-space: nowrap;
+}
+
+
+/* ==================================================
+EXPERIENCIA - WRAPPER
+================================================== */
+
+.experiencia-wrapper {
+    width: 92%;
+    max-width: 1280px;
+    margin: 28px auto;
+    background:
+        linear-gradient(135deg, rgba(20,0,45,0.94), rgba(0,30,55,0.9));
+    border: 5px ridge #ff00ff;
+    box-shadow:
+        0 0 28px rgba(255,0,255,0.75),
+        0 0 55px rgba(0,255,255,0.35),
+        10px 10px 0 rgba(0,0,0,0.55);
+}
+
+
+/* ==================================================
+EXPERIENCIA - HEADER
+================================================== */
+
+.pagina-experiencia .barra-superior {
+    background:
+        linear-gradient(to right, #250047, #ff00ff, #00ffff);
+    border-bottom: 5px ridge #fff200;
+    color: #ffffff;
+    text-shadow:
+        2px 2px 0 #000000,
+        0 0 8px #ff00ff;
+}
+
+.pagina-experiencia .logo-animado {
+    background:
+        radial-gradient(circle, #fff200, #ff00ff, #250047);
+    border: 4px solid #ffffff;
+    box-shadow:
+        0 0 18px #ff00ff,
+        0 0 30px #fff200;
+}
+
+.pagina-experiencia .contador-visitas {
+    background: #000000;
+    color: #fff200;
+    border: 3px inset #ff00ff;
+    text-shadow: 0 0 8px #fff200;
+}
+
+
+/* ==================================================
+EXPERIENCIA - MARQUEE Y NAVBAR
+================================================== */
+
+.pagina-experiencia .marquee-box {
+    background:
+        linear-gradient(to right, #000000, #ff00ff, #00ffff, #fff200);
+    color: #ffffff;
+    border-top: 3px solid #fff200;
+    border-bottom: 3px solid #ff00ff;
+    text-shadow:
+        1px 1px 0 #000000,
+        0 0 8px #00ffff;
+}
+
+.pagina-experiencia .navbar {
+    background:
+        repeating-linear-gradient(
+            45deg,
+            #100020,
+            #100020 12px,
+            #230044 12px,
+            #230044 24px
+        );
+    border-bottom: 4px double #fff200;
+}
+
+.pagina-experiencia .navbar a {
+    color: #fff200;
+    background:
+        linear-gradient(to bottom, #42006e, #180033, #000000);
+    border: 3px outset #ff00ff;
+    border-radius: 0;
+    box-shadow:
+        inset 0 0 10px rgba(255,255,255,0.2),
+        0 4px 0 #000000,
+        0 0 12px rgba(255,0,255,0.55);
+    text-shadow:
+        1px 1px 0 #000000,
+        0 0 8px #fff200;
+}
+
+.pagina-experiencia .navbar a:hover {
+    color: #000000;
+    background:
+        linear-gradient(to bottom, #ffffff, #fff200, #ff00ff);
+    transform: translateY(-5px) scale(1.08);
+}
+
+
+/* ==================================================
+EXPERIENCIA - LAYOUT
+================================================== */
+
+.experiencia-layout {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+
+/* ==================================================
+EXPERIENCIA - HERO
+================================================== */
+
+.experiencia-hero {
+    display: grid;
+    grid-template-columns: 1fr 270px;
+    gap: 24px;
+    align-items: stretch;
+}
+
+.experiencia-pantalla {
+    background:
+        linear-gradient(to bottom, #050505, #12001f);
+    border: 6px ridge #00ffff;
+    box-shadow:
+        0 0 25px rgba(0,255,255,0.7),
+        inset 0 0 35px rgba(0,255,255,0.12);
+    overflow: hidden;
+}
+
+.pantalla-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 10px 14px;
+    background: #000000;
+    color: #39ff14;
+    border-bottom: 3px solid #00ffff;
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+}
+
+.pantalla-content {
+    padding: 30px;
+    position: relative;
+}
+
+.pantalla-content::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        repeating-linear-gradient(
+            0deg,
+            rgba(255,255,255,0.04),
+            rgba(255,255,255,0.04) 2px,
+            transparent 2px,
+            transparent 5px
+        );
+    pointer-events: none;
+}
+
+.experiencia-label {
+    display: inline-block;
+    margin-bottom: 12px;
+    padding: 5px 8px;
+    background: #000000;
+    color: #39ff14;
+    border: 2px dashed #00ffff;
+    font-family: "Courier New", monospace;
+    font-size: 12px;
+}
+
+.pantalla-content h2 {
+    position: relative;
+    margin-bottom: 14px;
+    font-family: Impact, Verdana, sans-serif;
+    font-size: 62px;
+    line-height: 0.95;
+    color: #fff200;
+    text-shadow:
+        3px 3px 0 #ff00ff,
+        6px 6px 0 #000000,
+        0 0 12px #fff200;
+}
+
+.pantalla-content p {
+    position: relative;
+    max-width: 760px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #dff6ff;
+}
+
+
+/* ==================================================
+EXPERIENCIA - PLAYER CARD
+================================================== */
+
+.experiencia-player-card {
+    padding: 16px;
+    text-align: center;
+    background:
+        linear-gradient(to bottom, #ffffff, #dfffff);
+    color: #000000;
+    border: 5px outset #ffffff;
+    box-shadow:
+        7px 7px 0 rgba(0,0,0,0.55),
+        0 0 18px rgba(255,242,0,0.65);
+    transform: rotate(2deg);
+}
+
+.experiencia-player-card img {
+    width: 100%;
+    max-width: 210px;
+    height: 250px;
+    object-fit: cover;
+    border: 5px ridge #ff00ff;
+    background: #ffffff;
+    margin-bottom: 10px;
+}
+
+.experiencia-player-card h3 {
+    font-family: "Comic Sans MS", Verdana, sans-serif;
+    color: #ff00ff;
+    text-shadow: 1px 1px 0 #fff200;
+    margin-bottom: 5px;
+}
+
+.experiencia-player-card p {
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.experiencia-player-card span {
+    display: inline-block;
+    padding: 6px 8px;
+    background: #000000;
+    color: #39ff14;
+    border: 2px inset #d6e4f0;
+    font-family: "Courier New", monospace;
+    font-size: 11px;
+}
+
+
+/* ==================================================
+EXPERIENCIA - STATS
+================================================== */
+
+.experiencia-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.experiencia-stats article {
+    padding: 18px;
+    background:
+        linear-gradient(135deg, rgba(255,255,255,0.95), rgba(255,242,0,0.2));
+    color: #000000;
+    border: 4px outset #ffffff;
+    box-shadow:
+        5px 5px 0 rgba(0,0,0,0.45),
+        0 0 16px rgba(255,0,255,0.35);
+}
+
+.experiencia-stats span {
+    display: inline-block;
+    margin-bottom: 8px;
+    padding: 5px 8px;
+    background: #000000;
+    color: #fff200;
+    border: 2px dashed #ff00ff;
+    font-family: "Courier New", monospace;
+}
+
+.experiencia-stats h3 {
+    margin-bottom: 8px;
+    font-family: Impact, Verdana, sans-serif;
+    font-size: 26px;
+    color: #250047;
+}
+
+.experiencia-stats p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+/* ==================================================
+EXPERIENCIA - TIMELINE
+================================================== */
+
+.experiencia-timeline-section {
+    background:
+        linear-gradient(135deg, rgba(0,0,0,0.84), rgba(40,0,70,0.85));
+    border: 5px ridge #fff200;
+    box-shadow:
+        0 0 20px rgba(255,242,0,0.65),
+        8px 8px 0 rgba(0,0,0,0.45);
+    overflow: hidden;
+}
+
+.experiencia-title-bar {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 10px 14px;
+    background:
+        linear-gradient(to right, #ff00ff, #fff200, #00ffff);
+    color: #000000;
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+    border-bottom: 4px solid #000000;
+}
+
+.experiencia-timeline {
+    position: relative;
+    padding: 28px;
+}
+
+.experiencia-timeline::before {
+    content: "";
+    position: absolute;
+    top: 28px;
+    bottom: 28px;
+    left: 42px;
+    width: 6px;
+    background:
+        linear-gradient(to bottom, #ff00ff, #00ffff, #fff200, #39ff14);
+    box-shadow: 0 0 14px #00ffff;
+}
+
+.timeline-item {
+    display: grid;
+    grid-template-columns: 48px 1fr;
+    gap: 18px;
+    margin-bottom: 22px;
+    position: relative;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-punto {
+    position: relative;
+    z-index: 2;
+    width: 34px;
+    height: 34px;
+    margin-left: 0;
+    border-radius: 50%;
+    background: #fff200;
+    color: #000000;
+    border: 3px solid #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow:
+        0 0 14px #fff200,
+        3px 3px 0 rgba(0,0,0,0.45);
+    animation: brillar 0.8s infinite alternate;
+}
+
+.timeline-card {
+    padding: 18px;
+    background:
+        linear-gradient(to bottom, #ffffff, #dfffff);
+    color: #000000;
+    border: 4px outset #ffffff;
+    box-shadow:
+        6px 6px 0 rgba(0,0,0,0.45),
+        inset 0 0 12px rgba(255,255,255,0.85);
+    transition: all 0.2s ease;
+}
+
+.timeline-card:hover {
+    transform: translateX(8px) rotate(-1deg);
+    background:
+        linear-gradient(to bottom, #ffffff, #fff7b8);
+    box-shadow:
+        0 0 18px #ff00ff,
+        7px 7px 0 rgba(0,0,0,0.55);
+}
+
+.timeline-tag {
+    display: inline-block;
+    margin-bottom: 8px;
+    padding: 4px 8px;
+    background: #000000;
+    color: #39ff14;
+    border: 2px inset #d6e4f0;
+    font-family: "Courier New", monospace;
+    font-size: 12px;
+}
+
+.timeline-card h3 {
+    margin-bottom: 8px;
+    font-family: "Comic Sans MS", Verdana, sans-serif;
+    color: #ff00ff;
+    text-shadow: 1px 1px 0 #fff200;
+}
+
+.timeline-card p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+/* ==================================================
+EXPERIENCIA - LOGROS
+================================================== */
+
+.experiencia-logros {
+    padding: 24px;
+    background:
+        linear-gradient(135deg, rgba(255,255,255,0.94), rgba(0,255,255,0.18));
+    color: #000000;
+    border: 5px ridge #00ffff;
+    box-shadow: 7px 7px 0 rgba(0,0,0,0.45);
+}
+
+.experiencia-logros h2 {
+    margin-bottom: 18px;
+    font-family: Impact, Verdana, sans-serif;
+    font-size: 38px;
+    color: #250047;
+    text-shadow:
+        2px 2px 0 #ffffff,
+        4px 4px 0 #00ffff;
+}
+
+.logros-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+.logros-grid article {
+    padding: 16px;
+    text-align: center;
+    background:
+        linear-gradient(to bottom, #ffffff, #fff7b8);
+    border: 4px outset #ffffff;
+    box-shadow: 5px 5px 0 rgba(0,0,0,0.3);
+    transition: all 0.2s ease;
+}
+
+.logros-grid article:hover {
+    transform: translateY(-6px) scale(1.04);
+    box-shadow:
+        0 0 18px #fff200,
+        6px 6px 0 rgba(0,0,0,0.45);
+}
+
+.logro-icono {
+    font-size: 38px;
+    margin-bottom: 8px;
+}
+
+.logros-grid h3 {
+    margin-bottom: 8px;
+    color: #ff00ff;
+    font-family: "Comic Sans MS", Verdana, sans-serif;
+    text-shadow: 1px 1px 0 #fff200;
+}
+
+.logros-grid p {
+    font-size: 13px;
+    line-height: 1.45;
+}
+
+
+/* ==================================================
+EXPERIENCIA - FINAL
+================================================== */
+
+.experiencia-final {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    padding: 22px;
+    background:
+        linear-gradient(to right, #000000, #250047, #001f66);
+    border: 5px ridge #ff00ff;
+    box-shadow:
+        0 0 20px rgba(255,0,255,0.6),
+        7px 7px 0 rgba(0,0,0,0.45);
+}
+
+.experiencia-final h2 {
+    margin-bottom: 8px;
+    font-family: Impact, Verdana, sans-serif;
+    font-size: 34px;
+    color: #fff200;
+    text-shadow:
+        2px 2px 0 #000000,
+        0 0 10px #fff200;
+}
+
+.experiencia-final p {
+    max-width: 760px;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #dff6ff;
+}
+
+.experiencia-final a {
+    min-width: 150px;
+    text-align: center;
+    padding: 12px 18px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    background:
+        linear-gradient(to bottom, #ffffff, #fff200, #ff00ff);
+    border: 3px outset #ffffff;
+    border-radius: 24px;
+    box-shadow:
+        inset 0 2px 5px rgba(255,255,255,0.9),
+        0 5px 0 #870087,
+        0 0 15px #ff00ff;
+}
+
+
+/* ==================================================
+EXPERIENCIA - FOOTER
+================================================== */
+
+.pagina-experiencia .footer-y2k {
+    background:
+        linear-gradient(to bottom, #250047, #100020, #000000);
+    border-top: 5px ridge #fff200;
+}
+
+.pagina-experiencia .footer-copy {
+    background: #100020;
+}
+
+
+/* ==================================================
+RESPONSIVE EXPERIENCIA
+================================================== */
+
+@media screen and (max-width: 1000px) {
+    .experiencia-hero {
+        grid-template-columns: 1fr;
+    }
+
+    .experiencia-player-card {
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
+    .experiencia-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .logros-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .experiencia-final {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .experiencia-final a {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .experiencia-wrapper {
+        width: 100%;
+        margin: 0;
+    }
+
+    .experiencia-layout {
+        padding: 14px;
+    }
+
+    .pantalla-content h2 {
+        font-size: 38px;
+    }
+
+    .logros-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .experiencia-title-bar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .experiencia-timeline {
+        padding: 20px;
+    }
+
+    .experiencia-timeline::before {
+        left: 34px;
+    }
+}
+/* ==================================================
+BLOG - ESTILO MYSPACE / WEBLOG OLD INTERNET
+================================================== */
+
+body.pagina-blog {
+    min-height: 100vh;
+    color: #1b1024;
+    background-color: #ffd6f3;
+    background-image:
+        radial-gradient(circle at 20% 20%, rgba(255,255,255,0.8), transparent 15%),
+        radial-gradient(circle at 80% 15%, rgba(255,0,255,0.28), transparent 18%),
+        radial-gradient(circle at 60% 80%, rgba(0,255,255,0.35), transparent 20%),
+        linear-gradient(135deg, #ffd6f3, #d7ffff, #fff7b8);
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+body.pagina-blog::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -2;
+    background:
+        repeating-linear-gradient(
+            45deg,
+            rgba(255,255,255,0.35),
+            rgba(255,255,255,0.35) 10px,
+            rgba(255,0,255,0.08) 10px,
+            rgba(255,0,255,0.08) 20px
+        );
+}
+
+body.pagina-blog::after {
+    content: "WEBLOG / MYSPACE / DIARY / CREATIVE NOTES";
+    position: fixed;
+    left: -160px;
+    top: 45%;
+    z-index: -1;
+    font-family: Impact, Verdana, sans-serif;
+    font-size: 62px;
+    letter-spacing: 5px;
+    color: rgba(255,0,255,0.09);
+    transform: rotate(-12deg);
+    white-space: nowrap;
+}
+
+
+/* ==================================================
+BLOG - WRAPPER
+================================================== */
+
+.blog-wrapper {
+    width: 94%;
+    max-width: 1320px;
+    margin: 28px auto;
+    background:
+        linear-gradient(135deg, rgba(255,255,255,0.88), rgba(255,214,243,0.86));
+    border: 5px double #ff00ff;
+    box-shadow:
+        0 0 25px rgba(255,0,255,0.6),
+        0 0 45px rgba(0,255,255,0.35),
+        10px 10px 0 rgba(120,0,120,0.24);
+}
+
+
+/* ==================================================
+BLOG - HEADER
+================================================== */
+
+.pagina-blog .barra-superior {
+    background:
+        linear-gradient(to right, #ff00ff, #ff8adf, #00ffff);
+    color: #ffffff;
+    border-bottom: 5px double #ffffff;
+    text-shadow:
+        2px 2px 0 #000000,
+        0 0 8px #ff00ff;
+}
+
+.pagina-blog .logo-animado {
+    background:
+        radial-gradient(circle, #ffffff, #fff200, #ff00ff);
+    color: #1b1024;
+    border: 4px solid #ffffff;
+    box-shadow:
+        0 0 18px #fff200,
+        0 0 30px #ff00ff;
+}
+
+.pagina-blog .contador-visitas {
+    background: #ffffff;
+    color: #ff00ff;
+    border: 3px inset #ff8adf;
+    text-shadow: none;
+}
+
+
+/* ==================================================
+BLOG - MARQUEE Y NAVBAR
+================================================== */
+
+.pagina-blog .marquee-box {
+    background:
+        linear-gradient(to right, #fff200, #ff00ff, #00ffff, #fff200);
+    color: #000000;
+    border-top: 3px solid #ffffff;
+    border-bottom: 3px solid #ff00ff;
+    text-shadow: 1px 1px 0 #ffffff;
+}
+
+.pagina-blog .navbar {
+    background:
+        linear-gradient(to bottom, #ffffff, #ffd6f3, #ff8adf);
+    border-bottom: 5px ridge #ffffff;
+}
+
+.pagina-blog .navbar a {
+    color: #ffffff;
+    background:
+        linear-gradient(to bottom, #ffb8ec, #ff00ff, #8b008b);
+    border: 3px outset #ffffff;
+    border-radius: 18px;
+    box-shadow:
+        inset 0 2px 5px rgba(255,255,255,0.95),
+        0 4px 0 #780078,
+        0 0 12px rgba(255,0,255,0.55);
+    text-shadow: 1px 1px 0 #000000;
+}
+
+.pagina-blog .navbar a:hover {
+    color: #000000;
+    background:
+        linear-gradient(to bottom, #ffffff, #fff200, #00ffff);
+    transform: scale(1.12) rotate(-2deg);
+}
+
+
+/* ==================================================
+BLOG - LAYOUT
+================================================== */
+
+.blog-layout {
+    display: grid;
+    grid-template-columns: 220px 1fr 220px;
+    gap: 18px;
+    padding: 22px;
+}
+
+.blog-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+
+/* ==================================================
+BLOG - PROFILE BOX
+================================================== */
+
+.blog-profile-box {
+    padding: 14px;
+    text-align: center;
+    background:
+        linear-gradient(to bottom, #ffffff, #ffd6f3);
+    border: 4px outset #ffffff;
+    box-shadow:
+        5px 5px 0 rgba(120,0,120,0.28),
+        0 0 14px rgba(255,0,255,0.35);
+}
+
+.blog-profile-box img {
+    width: 145px;
+    height: 155px;
+    object-fit: cover;
+    border: 5px ridge #ff00ff;
+    background: #ffffff;
+    margin-bottom: 10px;
+}
+
+.blog-profile-box h3 {
+    margin-bottom: 6px;
+    font-family: "Comic Sans MS", Verdana, sans-serif;
+    color: #ff00ff;
+    text-shadow:
+        1px 1px 0 #fff200,
+        2px 2px 0 #000000;
+}
+
+.blog-profile-box p {
+    margin-bottom: 10px;
+    font-size: 13px;
+    line-height: 1.45;
+}
+
+.blog-profile-box span {
+    display: inline-block;
+    padding: 5px 8px;
+    background: #000000;
+    color: #39ff14;
+    border: 2px inset #d6e4f0;
+    font-family: "Courier New", monospace;
+    font-size: 11px;
+}
+
+
+/* ==================================================
+BLOG - WIDGETS
+================================================== */
+
+.blog-widget {
+    padding: 14px;
+    background:
+        linear-gradient(to bottom, #ffffff, #dfffff);
+    border: 4px ridge #ff8adf;
+    box-shadow:
+        5px 5px 0 rgba(0,0,0,0.22),
+        inset 0 0 12px rgba(255,255,255,0.88);
+}
+
+.blog-widget h3 {
+    margin: -14px -14px 12px -14px;
+    padding: 8px 10px;
+    background:
+        linear-gradient(to right, #ff00ff, #fff200);
+    color: #000000;
+    font-family: Impact, Verdana, sans-serif;
+    font-size: 20px;
+    text-shadow: 1px 1px 0 #ffffff;
+    border-bottom: 3px solid #ffffff;
+}
+
+.blog-widget ul {
+    padding-left: 18px;
+}
+
+.blog-widget li {
+    margin-bottom: 7px;
+    font-size: 13px;
+}
+
+.blog-widget p {
+    font-size: 13px;
+    line-height: 1.45;
+}
+
+.blog-categorias {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.blog-categorias a {
+    padding: 7px 9px;
+    background: #000000;
+    color: #39ff14;
+    text-decoration: none;
+    border: 2px dashed #00ffff;
+    font-family: "Courier New", monospace;
+    font-size: 12px;
+    box-shadow: 0 0 8px rgba(57,255,20,0.5);
+}
+
+.blog-categorias a:hover {
+    color: #000000;
+    background: #fff200;
+    border-color: #ff00ff;
+    transform: translateX(5px);
+}
+
+
+/* ==================================================
+BLOG - MAIN
+================================================== */
+
+.blog-main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+/* ==================================================
+BLOG - HERO
+================================================== */
+
+.blog-hero {
+    background:
+        linear-gradient(135deg, rgba(255,255,255,0.96), rgba(255,214,243,0.9));
+    border: 5px double #ff00ff;
+    box-shadow:
+        7px 7px 0 rgba(120,0,120,0.28),
+        0 0 18px rgba(255,0,255,0.45);
+    overflow: hidden;
+}
+
+.blog-hero-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 10px 14px;
+    background:
+        linear-gradient(to right, #ff00ff, #00ffff);
+    color: #ffffff;
+    border-bottom: 4px solid #ffffff;
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+    text-shadow: 1px 1px 0 #000000;
+}
+
+.blog-hero-content {
+    padding: 26px;
+}
+
+.blog-label,
+.post-fecha {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 5px 8px;
+    background: #000000;
+    color: #39ff14;
+    border: 2px inset #d6e4f0;
+    font-family: "Courier New", monospace;
+    font-size: 12px;
+}
+
+.blog-hero-content h2 {
+    margin-bottom: 12px;
+    font-family: Impact, Verdana, sans-serif;
+    font-size: 58px;
+    line-height: 0.95;
+    color: #ff00ff;
+    text-shadow:
+        2px 2px 0 #ffffff,
+        5px 5px 0 #00ffff;
+}
+
+.blog-hero-content p {
+    margin-bottom: 12px;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+
+/* ==================================================
+BLOG - POST DESTACADO
+================================================== */
+
+.blog-post {
+    background:
+        linear-gradient(to bottom, #ffffff, #fff7b8);
+    border: 5px ridge #fff200;
+    box-shadow:
+        7px 7px 0 rgba(0,0,0,0.28),
+        0 0 18px rgba(255,242,0,0.6);
+    overflow: hidden;
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 9px 12px;
+    background:
+        linear-gradient(to right, #fff200, #ff00ff, #00ffff);
+    color: #000000;
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+    border-bottom: 4px solid #000000;
+}
+
+.post-content {
+    padding: 22px;
+}
+
+.post-content h2 {
+    margin-bottom: 12px;
+    font-family: Impact, Verdana, sans-serif;
+    font-size: 40px;
+    color: #1b1024;
+    text-shadow:
+        2px 2px 0 #ffffff,
+        4px 4px 0 #ff8adf;
+}
+
+.post-content p {
+    margin-bottom: 12px;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.post-content a,
+.blog-post-mini a,
+.blog-nota-final a {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 9px 14px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    background:
+        linear-gradient(to bottom, #ffb8ec, #ff00ff, #8b008b);
+    border: 3px outset #ffffff;
+    border-radius: 18px;
+    text-shadow: 1px 1px 0 #000000;
+    box-shadow:
+        inset 0 2px 5px rgba(255,255,255,0.85),
+        0 4px 0 #780078;
+}
+
+.post-content a:hover,
+.blog-post-mini a:hover,
+.blog-nota-final a:hover {
+    color: #000000;
+    background:
+        linear-gradient(to bottom, #ffffff, #fff200, #00ffff);
+}
+
+
+/* ==================================================
+BLOG - MINI POSTS
+================================================== */
+
+.blog-posts-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.blog-post-mini {
+    position: relative;
+    padding: 18px;
+    background:
+        linear-gradient(to bottom, #ffffff, #dfffff);
+    border: 4px outset #ffffff;
+    box-shadow:
+        6px 6px 0 rgba(0,0,0,0.24),
+        inset 0 0 14px rgba(255,255,255,0.8);
+    transition: all 0.2s ease;
+}
+
+.blog-post-mini:hover {
+    transform: translateY(-6px) rotate(-1deg);
+    background:
+        linear-gradient(to bottom, #ffffff, #ffd6f3);
+    box-shadow:
+        0 0 18px rgba(255,0,255,0.6),
+        7px 7px 0 rgba(0,0,0,0.32);
+}
+
+.mini-post-sticker {
+    position: absolute;
+    top: -10px;
+    right: -8px;
+    padding: 5px 8px;
+    background: #fff200;
+    color: #000000;
+    border: 2px solid #000000;
+    font-family: Impact, Verdana, sans-serif;
+    font-size: 14px;
+    transform: rotate(10deg);
+    box-shadow: 3px 3px 0 rgba(0,0,0,0.25);
+}
+
+.blog-post-mini h3 {
+    margin-bottom: 8px;
+    font-family: "Comic Sans MS", Verdana, sans-serif;
+    color: #ff00ff;
+    text-shadow: 1px 1px 0 #fff200;
+}
+
+.blog-post-mini p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+/* ==================================================
+BLOG - COUNTER Y STAMPS
+================================================== */
+
+.blog-counter {
+    margin-bottom: 10px;
+    padding: 10px;
+    background: #000000;
+    color: #39ff14;
+    border: 3px inset #d6e4f0;
+    font-family: "Courier New", monospace;
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 3px;
+    box-shadow: 0 0 10px rgba(57,255,20,0.5);
+}
+
+.blog-stamps {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+}
+
+.blog-stamps h3 {
+    width: calc(100% + 28px);
+}
+
+.blog-stamps span {
+    display: inline-block;
+    padding: 5px 8px;
+    background: #000000;
+    color: #39ff14;
+    border: 2px dashed #00ffff;
+    font-family: "Courier New", monospace;
+    font-size: 11px;
+}
+
+.blog-stamps span:nth-child(even) {
+    color: #fff200;
+    border-color: #ff00ff;
+}
+
+
+/* ==================================================
+BLOG - NOTA FINAL
+================================================== */
+
+.blog-nota-final {
+    padding: 22px;
+    background:
+        linear-gradient(135deg, rgba(0,0,0,0.92), rgba(70,0,90,0.9));
+    color: #ffffff;
+    border: 5px ridge #ff00ff;
+    box-shadow:
+        0 0 20px rgba(255,0,255,0.65),
+        7px 7px 0 rgba(0,0,0,0.35);
+}
+
+.blog-nota-final h2 {
+    margin-bottom: 10px;
+    font-family: Impact, Verdana, sans-serif;
+    font-size: 36px;
+    color: #fff200;
+    text-shadow:
+        2px 2px 0 #000000,
+        0 0 10px #fff200;
+}
+
+.blog-nota-final p {
+    max-width: 760px;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+
+/* ==================================================
+BLOG - FOOTER
+================================================== */
+
+.pagina-blog .footer-y2k {
+    background:
+        linear-gradient(to bottom, #ff00ff, #8b008b, #1b1024);
+    border-top: 5px ridge #ffffff;
+}
+
+.pagina-blog .footer-copy {
+    background: #1b1024;
+}
+
+
+/* ==================================================
+RESPONSIVE BLOG
+================================================== */
+
+@media screen and (max-width: 1100px) {
+    .blog-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .blog-sidebar-left {
+        order: 2;
+    }
+
+    .blog-main {
+        order: 1;
+    }
+
+    .blog-sidebar-right {
+        order: 3;
+    }
+
+    .blog-sidebar {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .blog-wrapper {
+        width: 100%;
+        margin: 0;
+    }
+
+    .blog-layout {
+        padding: 14px;
+    }
+
+    .blog-sidebar {
+        grid-template-columns: 1fr;
+    }
+
+    .blog-hero-top,
+    .post-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .blog-hero-content h2 {
+        font-size: 38px;
+    }
+
+    .blog-posts-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* ==================================================
+SERVICIOS - ESTILO CATÁLOGO LINGSCARS / TIENDA RETRO
+================================================== */
+
+body.pagina-servicios {
+    min-height: 100vh;
+    color: #111111;
+    background-color: #fff200;
+    background-image:
+        radial-gradient(circle at 12% 18%, rgba(255,0,255,0.42), transparent 17%),
+        radial-gradient(circle at 88% 12%, rgba(0,255,255,0.48), transparent 18%),
+        radial-gradient(circle at 60% 82%, rgba(57,255,20,0.42), transparent 22%),
+        repeating-linear-gradient(
+            45deg,
+            rgba(255,255,255,0.35),
+            rgba(255,255,255,0.35) 10px,
+            rgba(255,0,255,0.12) 10px,
+            rgba(255,0,255,0.12) 20px
+        ),
+        linear-gradient(135deg, #fff200, #ff00ff, #00ffff);
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+body.pagina-servicios::before {
+    content: "SERVICES! SERVICES! SERVICES! BRANDING! VIDEO! WEB! DESIGN!";
+    position: fixed;
+    top: 42%;
+    left: -220px;
+    z-index: -1;
+    font-family: Impact, Verdana, sans-serif;
+    font-size: 74px;
+    letter-spacing: 5px;
+    color: rgba(0,0,0,0.08);
+    transform: rotate(-12deg);
+    white-space: nowrap;
+}
+
+body.pagina-servicios::after {
+    content: "WOW!";
+    position: fixed;
+    right: 34px;
+    bottom: 34px;
+    z-index: -1;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #39ff14;
+    color: #000000;
+    border: 5px solid #000000;
+    font-family: Impact, Verdana, sans-serif;
+    font-size: 42px;
+    transform: rotate(12deg);
+    box-shadow: 8px 8px 0 rgba(0,0,0,0.28);
+}
+
+
+/* ==================================================
+SERVICIOS - WRAPPER
+================================================== */
+
+.servicios-wrapper {
+    width: 94%;
+    max-width: 1320px;
+    margin: 28px auto;
+    background:
+        linear-gradient(135deg, rgba(255,255,255,0.92), rgba(255,242,0,0.72));
+    border: 6px ridge #000000;
+    box-shadow:
+        0 0 28px rgba(255,0,255,0.65),
+        0 0 48px rgba(0,255,255,0.55),
+        12px 12px 0 rgba(0,0,0,0.4);
+}
+
+
+/* ==================================================
+SERVICIOS - HEADER
+================================================== */
+
+.pagina-servicios .barra-superior {
+    background:
+        linear-gradient(to right, #ff0000, #ff00ff, #fff200, #39ff14, #00ffff);
+    color: #ffffff;
+    border-bottom: 6px solid #000000;
+    text-shadow:
+        2px 2px 0 #000000,
+        0 0 8px #ff00ff;
+}
+
+.pagina-servicios .logo-animado {
+    background:
+        radial-gradient(circle, #ffffff, #fff200, #ff0000);
+    color: #000000;
+    border: 4px solid #000000;
+    box-shadow:
+        0 0 18px #fff200,
+        0 0 30px #ff00ff;
+}
+
+.pagina-servicios .contador-visitas {
+    background: #000000;
+    color: #39ff14;
+    border: 3px inset #ffffff;
+    text-shadow: 0 0 8px #39ff14;
+}
+
+
+/* ==================================================
+SERVICIOS - MARQUEE Y NAVBAR
+================================================== */
+
+.pagina-servicios .marquee-box {
+    background:
+        linear-gradient(to right, #000000, #fff200, #ff00ff, #00ffff, #39ff14);
+    color: #000000;
+    border-top: 4px solid #000000;
+    border-bottom: 4px solid #000000;
+    text-shadow: 1px 1px 0 #ffffff;
+}
+
+.pagina-servicios .navbar {
+    background:
+        repeating-linear-gradient(
+            45deg,
+            #ffffff,
+            #ffffff 10px,
+            #fff200 10px,
+            #fff200 20px
+        );
+    border-bottom: 6px double #000000;
+}
+
+.pagina-servicios .navbar a {
+    color: #000000;
+    background:
+        linear-gradient(to bottom, #ffffff, #fff200, #ff00ff);
+    border: 3px outset #ffffff;
+    border-radius: 0;
+    box-shadow:
+        inset 0 2px 5px rgba(255,255,255,0.95),
+        0 5px 0 #000000,
+        0 0 12px rgba(255,0,255,0.65);
+    text-shadow: 1px 1px 0 #ffffff;
+}
+
+.pagina-servicios .navbar a:hover {
+    color: #ffffff;
+    background:
+        linear-gradient(to bottom, #000000, #ff0000, #ff00ff);
+    transform: scale(1.16) rotate(-3deg);
+    text-shadow: 1px 1px 0 #000000;
+}
+
+
+/* ==================================================
+SERVICIOS - LAYOUT
+================================================== */
+
+.servicios-layout {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+
+/* ==================================================
+SERVICIOS - HERO
+================================================== */
+
+.servicios-hero {
+    position: relative;
+    padding: 24px;
+    background:
+        linear-gradient(135deg, rgba(255,255,255,0.96), rgba(0,255,255,0.35)),
+        repeating-linear-gradient(
+            -45deg,
+            rgba(255,0,255,0.15),
+            rgba(255,0,255,0.15) 12px,
+            rgba(255,242,0,0.2) 12px,
+            rgba(255,242,0,0.2) 24px
+        );
+    border: 6px double #000000;
+    box-shadow:
+        8px 8px 0 rgba(0,0,0,0.38),
+        0 0 20px rgba(255,0,255,0.6);
+    overflow: hidden;
+}
+
+.servicios-hero-etiqueta {
+    width: fit-content;
+    margin-bottom: 16px;
+    padding: 8px 14px;
+    background: #000000;
+    color: #39ff14;
+    border: 3px dashed #00ffff;
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(57,255,20,0.65);
+}
+
+.servicios-hero-content {
+    display: grid;
+    grid-template-columns: 1fr 250px;
+    gap: 24px;
+    align-items: center;
+}
+
+.servicios-label {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 5px 8px;
+    background: #000000;
+    color: #39ff14;
+    border: 2px inset #d6e4f0;
+    font-family: "Courier New", monospace;
+    font-size: 12px;
+}
+
+.servicios-hero-texto h2 {
+    margin-bottom: 14px;
+    font-family: Impact, Verdana, sans-serif;
+    font-size: 62px;
+    line-height: 0.92;
+    color: #ff0000;
+    text-shadow:
+        2px 2px 0 #ffffff,
+        5px 5px 0 #fff200,
+        8px 8px 0 #000000;
+}
+
+.servicios-hero-texto p {
+    max-width: 780px;
+    margin-bottom: 12px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.servicios-cta-principal {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 13px 20px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    background:
+        linear-gradient(to bottom, #ffffff, #39ff14, #00ffff);
+    border: 4px outset #ffffff;
+    border-radius: 26px;
+    box-shadow:
+        inset 0 2px 6px rgba(255,255,255,0.95),
+        0 6px 0 #006b6b,
+        0 0 18px rgba(0,255,255,0.7);
+}
+
+.servicios-cta-principal:hover {
+    transform: translateY(-5px) rotate(-2deg);
+    background:
+        linear-gradient(to bottom, #ffffff, #fff200, #ff00ff);
+}
+
+
+/* ==================================================
+SERVICIOS - MEGA STICKER
+================================================== */
+
+.servicios-mega-sticker {
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    margin: 0 auto;
+    background:
+        radial-gradient(circle, #ffffff, #fff200 45%, #ff00ff 72%, #000000);
+    border: 6px solid #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Impact, Verdana, sans-serif;
+    text-align: center;
+    transform: rotate(8deg);
+    box-shadow:
+        8px 8px 0 rgba(0,0,0,0.35),
+        0 0 22px rgba(255,242,0,0.8);
+    animation: saltar 0.8s infinite alternate;
+}
+
+.servicios-mega-sticker span {
+    font-size: 44px;
+    color: #ff0000;
+    text-shadow:
+        2px 2px 0 #ffffff,
+        4px 4px 0 #000000;
+}
+
+.servicios-mega-sticker p {
+    font-size: 28px;
+    line-height: 0.95;
+    color: #000000;
+    text-shadow: 1px 1px 0 #ffffff;
+}
+
+
+/* ==================================================
+SERVICIOS - BANNER
+================================================== */
+
+.servicios-banner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    padding: 14px;
+    background:
+        linear-gradient(to right, #000000, #ff00ff, #fff200, #00ffff);
+    border: 5px solid #000000;
+    box-shadow: 6px 6px 0 rgba(0,0,0,0.35);
+}
+
+.servicios-banner span {
+    padding: 7px 12px;
+    background: #ffffff;
+    color: #000000;
+    border: 3px outset #ffffff;
+    font-family: Impact, Verdana, sans-serif;
+    font-size: 18px;
+    box-shadow: 3px 3px 0 rgba(0,0,0,0.3);
+}
+
+
+/* ==================================================
+SERVICIOS - GRID
+================================================== */
+
+.servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.servicio-card {
+    position: relative;
+    padding: 20px;
+    background:
+        linear-gradient(to bottom, #ffffff, #fff7b8);
+    border: 5px outset #ffffff;
+    box-shadow:
+        7px 7px 0 rgba(0,0,0,0.36),
+        0 0 16px rgba(255,0,255,0.35);
+    transition: all 0.2s ease;
+    overflow: hidden;
+}
+
+.servicio-card:hover {
+    transform: translateY(-8px) rotate(-1deg) scale(1.03);
+    box-shadow:
+        0 0 20px #ff00ff,
+        0 0 30px #00ffff,
+        9px 9px 0 rgba(0,0,0,0.45);
+}
+
+.servicio-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        repeating-linear-gradient(
+            45deg,
+            rgba(255,255,255,0.25),
+            rgba(255,255,255,0.25) 10px,
+            rgba(0,0,0,0.04) 10px,
+            rgba(0,0,0,0.04) 20px
+        );
+    pointer-events: none;
+}
+
+.servicio-precio {
+    position: absolute;
+    top: -10px;
+    right: -8px;
+    z-index: 2;
+    padding: 7px 10px;
+    background: #ff0000;
+    color: #ffffff;
+    border: 3px solid #000000;
+    font-family: Impact, Verdana, sans-serif;
+    font-size: 16px;
+    transform: rotate(10deg);
+    box-shadow: 3px 3px 0 rgba(0,0,0,0.35);
+}
+
+.servicio-icono {
+    position: relative;
+    z-index: 1;
+    width: 74px;
+    height: 74px;
+    margin-bottom: 12px;
+    border-radius: 18px;
+    background:
+        linear-gradient(to bottom, #ffffff, #00ffff);
+    border: 4px outset #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 38px;
+    box-shadow:
+        5px 5px 0 rgba(0,0,0,0.28),
+        0 0 12px rgba(0,255,255,0.65);
+}
+
+.servicio-card h3 {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 10px;
+    font-family: Impact, Verdana, sans-serif;
+    font-size: 32px;
+    color: #ff00ff;
+    text-shadow:
+        1px 1px 0 #ffffff,
+        3px 3px 0 #fff200;
+}
+
+.servicio-card p {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 12px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.servicio-card ul {
+    position: relative;
+    z-index: 1;
+    padding-left: 18px;
+    margin-bottom: 14px;
+}
+
+.servicio-card li {
+    margin-bottom: 6px;
+    font-size: 13px;
+}
+
+.servicio-card a {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    padding: 9px 14px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    background:
+        linear-gradient(to bottom, #ff0000, #ff00ff, #8b008b);
+    border: 3px outset #ffffff;
+    border-radius: 18px;
+    text-shadow: 1px 1px 0 #000000;
+    box-shadow:
+        inset 0 2px 5px rgba(255,255,255,0.75),
+        0 4px 0 #5f005f;
+}
+
+.servicio-card a:hover {
+    color: #000000;
+    background:
+        linear-gradient(to bottom, #ffffff, #fff200, #39ff14);
+    text-shadow: 1px 1px 0 #ffffff;
+}
+
+.servicio-card-uno {
+    background: linear-gradient(to bottom, #ffffff, #ffd6f3);
+}
+
+.servicio-card-dos {
+    background: linear-gradient(to bottom, #ffffff, #dfffff);
+}
+
+.servicio-card-tres {
+    background: linear-gradient(to bottom, #ffffff, #fff7b8);
+}
+
+.servicio-card-cuatro {
+    background: linear-gradient(to bottom, #ffffff, #e7d6ff);
+}
+
+.servicio-card-cinco {
+    background: linear-gradient(to bottom, #ffffff, #d6ffd8);
+}
+
+.servicio-card-seis {
+    background: linear-gradient(to bottom, #ffffff, #d6e4ff);
+}
+
+
+/* ==================================================
+SERVICIOS - COMBOS
+================================================== */
+
+.servicios-combos {
+    background:
+        linear-gradient(135deg, rgba(0,0,0,0.92), rgba(60,0,80,0.9));
+    color: #ffffff;
+    border: 6px ridge #39ff14;
+    box-shadow:
+        0 0 22px rgba(57,255,20,0.65),
+        8px 8px 0 rgba(0,0,0,0.4);
+    overflow: hidden;
+}
+
+.servicios-combos-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 10px 14px;
+    background:
+        linear-gradient(to right, #39ff14, #fff200, #00ffff);
+    color: #000000;
+    border-bottom: 4px solid #000000;
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+}
+
+.combos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    padding: 22px;
+}
+
+.combos-grid article {
+    padding: 18px;
+    background:
+        linear-gradient(to bottom, #ffffff, #dfffff);
+    color: #000000;
+    border: 4px outset #ffffff;
+    box-shadow: 6px 6px 0 rgba(0,0,0,0.35);
+}
+
+.combos-grid h3 {
+    margin-bottom: 8px;
+    font-family: Impact, Verdana, sans-serif;
+    font-size: 28px;
+    color: #ff00ff;
+    text-shadow: 1px 1px 0 #fff200;
+}
+
+.combos-grid p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.combos-grid span {
+    display: inline-block;
+    padding: 5px 8px;
+    background: #000000;
+    color: #39ff14;
+    border: 2px dashed #00ffff;
+    font-family: "Courier New", monospace;
+    font-size: 11px;
+}
+
+
+/* ==================================================
+SERVICIOS - PROCESO
+================================================== */
+
+.servicios-proceso {
+    padding: 24px;
+    background:
+        linear-gradient(135deg, rgba(255,255,255,0.96), rgba(0,255,255,0.22));
+    border: 6px ridge #ffffff;
+    box-shadow: 8px 8px 0 rgba(0,0,0,0.35);
+}
+
+.servicios-proceso h2 {
+    margin-bottom: 18px;
+    font-family: Impact, Verdana, sans-serif;
+    font-size: 40px;
+    color: #ff0000;
+    text-shadow:
+        2px 2px 0 #ffffff,
+        4px 4px 0 #fff200;
+}
+
+.proceso-servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+.proceso-servicios-grid article {
+    padding: 16px;
+    background:
+        linear-gradient(to bottom, #ffffff, #fff7b8);
+    border: 4px outset #ffffff;
+    box-shadow: 5px 5px 0 rgba(0,0,0,0.28);
+}
+
+.proceso-servicios-grid span {
+    display: inline-block;
+    margin-bottom: 8px;
+    padding: 5px 8px;
+    background: #000000;
+    color: #39ff14;
+    border: 2px dashed #00ffff;
+    font-family: "Courier New", monospace;
+}
+
+.proceso-servicios-grid h3 {
+    margin-bottom: 8px;
+    font-family: "Comic Sans MS", Verdana, sans-serif;
+    color: #ff00ff;
+    text-shadow: 1px 1px 0 #fff200;
+}
+
+.proceso-servicios-grid p {
+    font-size: 13px;
+    line-height: 1.45;
+}
+
+
+/* ==================================================
+SERVICIOS - FINAL
+================================================== */
+
+.servicios-final {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 22px;
+    padding: 24px;
+    background:
+        linear-gradient(to right, #000000, #ff00ff, #ff0000);
+    color: #ffffff;
+    border: 6px ridge #fff200;
+    box-shadow:
+        0 0 22px rgba(255,0,255,0.7),
+        8px 8px 0 rgba(0,0,0,0.4);
+}
+
+.servicios-final h2 {
+    margin-bottom: 8px;
+    font-family: Impact, Verdana, sans-serif;
+    font-size: 38px;
+    color: #fff200;
+    text-shadow:
+        2px 2px 0 #000000,
+        0 0 10px #fff200;
+}
+
+.servicios-final p {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.servicios-final a {
+    min-width: 150px;
+    text-align: center;
+    padding: 13px 20px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    background:
+        linear-gradient(to bottom, #ffffff, #fff200, #39ff14);
+    border: 4px outset #ffffff;
+    border-radius: 26px;
+    box-shadow:
+        inset 0 2px 6px rgba(255,255,255,0.95),
+        0 6px 0 #006b2d,
+        0 0 18px rgba(57,255,20,0.75);
+}
+
+
+/* ==================================================
+SERVICIOS - FOOTER
+================================================== */
+
+.pagina-servicios .footer-y2k {
+    background:
+        linear-gradient(to bottom, #ff0000, #8b0000, #000000);
+    border-top: 6px ridge #fff200;
+}
+
+.pagina-servicios .footer-copy {
+    background: #170000;
+}
+
+
+/* ==================================================
+RESPONSIVE SERVICIOS
+================================================== */
+
+@media screen and (max-width: 1100px) {
+    .servicios-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .proceso-servicios-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .servicios-hero-content {
+        grid-template-columns: 1fr;
+    }
+
+    .combos-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .servicios-wrapper {
+        width: 100%;
+        margin: 0;
+    }
+
+    .servicios-layout {
+        padding: 14px;
+    }
+
+    .servicios-hero-texto h2 {
+        font-size: 40px;
+    }
+
+    .servicios-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .proceso-servicios-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .servicios-final {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .servicios-final a {
+        width: 100%;
+    }
+
+    .servicios-mega-sticker {
+        width: 190px;
+        height: 190px;
+    }
+
+    .servicios-mega-sticker span {
+        font-size: 36px;
+    }
+
+    .servicios-mega-sticker p {
+        font-size: 23px;
+    }
+}
+/* ==================================================
+CONTACTO - ESTILO CYBER CAFE / TERMINAL RETRO
+================================================== */
+
+body.pagina-contacto {
+    min-height: 100vh;
+    color: #dff6ff;
+    background-color: #00110d;
+    background-image:
+        radial-gradient(circle at 16% 18%, rgba(57,255,20,0.28), transparent 18%),
+        radial-gradient(circle at 84% 12%, rgba(0,255,255,0.32), transparent 18%),
+        radial-gradient(circle at 55% 82%, rgba(255,0,255,0.22), transparent 22%),
+        linear-gradient(135deg, #00110d, #00261f, #000000);
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+body.pagina-contacto::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -2;
+    background:
+        linear-gradient(rgba(57,255,20,0.08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(57,255,20,0.08) 1px, transparent 1px);
+    background-size: 30px 30px;
+}
+
+body.pagina-contacto::after {
+    content: "CONTACT / SIGNAL / MESSAGE / CONNECT";
+    position: fixed;
+    left: -130px;
+    bottom: 90px;
+    z-index: -1;
+    font-family: Impact, Verdana, sans-serif;
+    font-size: 64px;
+    letter-spacing: 5px;
+    color: rgba(57,255,20,0.08);
+    transform: rotate(-10deg);
+    white-space: nowrap;
+}
+
+
+/* ==================================================
+CONTACTO - WRAPPER
+================================================== */
+
+.contacto-wrapper {
+    width: 92%;
+    max-width: 1280px;
+    margin: 28px auto;
+    background:
+        linear-gradient(135deg, rgba(0,30,24,0.94), rgba(0,70,65,0.82));
+    border: 5px ridge #39ff14;
+    box-shadow:
+        0 0 28px rgba(57,255,20,0.65),
+        0 0 50px rgba(0,255,255,0.35),
+        10px 10px 0 rgba(0,0,0,0.55);
+}
+
+
+/* ==================================================
+CONTACTO - HEADER
+================================================== */
+
+.pagina-contacto .barra-superior {
+    background:
+        linear-gradient(to right, #00110d, #006b54, #00ffff);
+    color: #ffffff;
+    border-bottom: 5px ridge #39ff14;
+    text-shadow:
+        2px 2px 0 #000000,
+        0 0 8px #39ff14;
+}
+
+.pagina-contacto .logo-animado {
+    background:
+        radial-gradient(circle, #ffffff, #39ff14, #006b54);
+    color: #00110d;
+    border: 4px solid #ffffff;
+    box-shadow:
+        0 0 18px #39ff14,
+        0 0 30px #00ffff;
+}
+
+.pagina-contacto .contador-visitas {
+    background: #000000;
+    color: #39ff14;
+    border: 3px inset #39ff14;
+    text-shadow: 0 0 8px #39ff14;
+}
+
+
+/* ==================================================
+CONTACTO - MARQUEE Y NAVBAR
+================================================== */
+
+.pagina-contacto .marquee-box {
+    background:
+        linear-gradient(to right, #000000, #39ff14, #00ffff, #000000);
+    color: #000000;
+    border-top: 3px solid #39ff14;
+    border-bottom: 3px solid #00ffff;
+    text-shadow: 1px 1px 0 #ffffff;
+}
+
+.pagina-contacto .navbar {
+    background:
+        linear-gradient(to bottom, #00110d, #00261f, #003b35);
+    border-bottom: 4px double #39ff14;
+}
+
+.pagina-contacto .navbar a {
+    color: #39ff14;
+    background:
+        linear-gradient(to bottom, #00261f, #00110d, #000000);
+    border: 3px outset #39ff14;
+    border-radius: 4px;
+    box-shadow:
+        inset 0 0 10px rgba(57,255,20,0.2),
+        0 4px 0 #000000,
+        0 0 12px rgba(57,255,20,0.45);
+    text-shadow: 0 0 8px #39ff14;
+}
+
+.pagina-contacto .navbar a:hover {
+    color: #000000;
+    background:
+        linear-gradient(to bottom, #ffffff, #39ff14, #00ffff);
+    transform: translateY(-5px);
+    text-shadow: 1px 1px 0 #ffffff;
+}
+
+
+/* ==================================================
+CONTACTO - LAYOUT
+================================================== */
+
+.contacto-layout {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+
+/* ==================================================
+CONTACTO - HERO
+================================================== */
+
+.contacto-hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    align-items: stretch;
+}
+
+.contacto-terminal {
+    background: #020202;
+    border: 5px inset #39ff14;
+    box-shadow:
+        0 0 24px rgba(57,255,20,0.65),
+        inset 0 0 24px rgba(57,255,20,0.16);
+    overflow: hidden;
+}
+
+.terminal-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 10px 14px;
+    background: #00110d;
+    color: #39ff14;
+    border-bottom: 3px solid #39ff14;
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+}
+
+.terminal-screen {
+    padding: 24px;
+    min-height: 250px;
+    font-family: "Courier New", monospace;
+    color: #39ff14;
+    background:
+        repeating-linear-gradient(
+            0deg,
+            rgba(57,255,20,0.07),
+            rgba(57,255,20,0.07) 2px,
+            transparent 2px,
+            transparent 5px
+        );
+}
+
+.terminal-screen p {
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+.terminal-screen span {
+    color: #fff200;
+}
+
+.contacto-hero-texto {
+    padding: 26px;
+    background:
+        linear-gradient(135deg, rgba(255,255,255,0.92), rgba(0,255,255,0.18));
+    color: #00110d;
+    border: 5px ridge #00ffff;
+    box-shadow:
+        7px 7px 0 rgba(0,0,0,0.35),
+        0 0 18px rgba(0,255,255,0.55);
+}
+
+.contacto-label {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 5px 8px;
+    background: #000000;
+    color: #39ff14;
+    border: 2px inset #d6e4f0;
+    font-family: "Courier New", monospace;
+    font-size: 12px;
+}
+
+.contacto-hero-texto h2 {
+    margin-bottom: 14px;
+    font-family: Impact, Verdana, sans-serif;
+    font-size: 62px;
+    line-height: 0.95;
+    color: #006b54;
+    text-shadow:
+        2px 2px 0 #ffffff,
+        5px 5px 0 #39ff14;
+}
+
+.contacto-hero-texto p {
+    margin-bottom: 12px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+/* ==================================================
+CONTACTO - GRID PRINCIPAL
+================================================== */
+
+.contacto-grid {
+    display: grid;
+    grid-template-columns: 1fr 330px;
+    gap: 24px;
+}
+
+
+/* ==================================================
+CONTACTO - FORMULARIO
+================================================== */
+
+.contacto-form-box {
+    background:
+        linear-gradient(to bottom, #ffffff, #dfffff);
+    color: #00110d;
+    border: 5px ridge #00ffff;
+    box-shadow:
+        7px 7px 0 rgba(0,0,0,0.38),
+        0 0 18px rgba(0,255,255,0.45);
+    overflow: hidden;
+}
+
+.contacto-box-title {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 10px 14px;
+    background:
+        linear-gradient(to right, #006b54, #39ff14, #00ffff);
+    color: #000000;
+    border-bottom: 4px solid #00110d;
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+}
+
+.contacto-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 22px;
+}
+
+.contacto-form label {
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+    color: #006b54;
+}
+
+.contacto-form input,
+.contacto-form select,
+.contacto-form textarea {
+    width: 100%;
+    padding: 11px 12px;
+    background: #ffffff;
+    color: #00110d;
+    border: 3px inset #7bdfff;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 14px;
+    outline: none;
+}
+
+.contacto-form input:focus,
+.contacto-form select:focus,
+.contacto-form textarea:focus {
+    border-color: #39ff14;
+    box-shadow:
+        0 0 10px rgba(57,255,20,0.65),
+        inset 0 0 8px rgba(57,255,20,0.12);
+}
+
+.contacto-form textarea {
+    resize: vertical;
+}
+
+.contacto-form button {
+    margin-top: 8px;
+    padding: 13px 18px;
+    cursor: pointer;
+    color: #000000;
+    font-weight: bold;
+    background:
+        linear-gradient(to bottom, #ffffff, #39ff14, #00ffff);
+    border: 4px outset #ffffff;
+    border-radius: 24px;
+    font-family: Verdana, Tahoma, sans-serif;
+    box-shadow:
+        inset 0 2px 6px rgba(255,255,255,0.95),
+        0 6px 0 #006b54,
+        0 0 18px rgba(57,255,20,0.7);
+}
+
+.contacto-form button:hover {
+    transform: translateY(-4px) rotate(-1deg);
+    background:
+        linear-gradient(to bottom, #ffffff, #fff200, #39ff14);
+}
+
+
+/* ==================================================
+CONTACTO - INFO PANEL
+================================================== */
+
+.contacto-info-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contacto-card-info {
+    padding: 16px;
+    background:
+        linear-gradient(to bottom, rgba(0,0,0,0.92), rgba(0,45,35,0.94));
+    color: #dff6ff;
+    border: 4px ridge #39ff14;
+    box-shadow:
+        0 0 14px rgba(57,255,20,0.5),
+        5px 5px 0 rgba(0,0,0,0.38);
+}
+
+.contacto-card-info h3 {
+    margin-bottom: 12px;
+    font-family: Impact, Verdana, sans-serif;
+    font-size: 24px;
+    color: #39ff14;
+    text-shadow:
+        1px 1px 0 #000000,
+        0 0 10px #39ff14;
+}
+
+.contacto-card-info p {
+    margin-bottom: 8px;
+    font-size: 13px;
+    line-height: 1.45;
+}
+
+.contacto-links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.contacto-links a {
+    padding: 8px 10px;
+    color: #39ff14;
+    text-decoration: none;
+    background: #000000;
+    border: 2px dashed #00ffff;
+    font-family: "Courier New", monospace;
+    font-size: 12px;
+    box-shadow: 0 0 8px rgba(57,255,20,0.45);
+}
+
+.contacto-links a:hover {
+    color: #000000;
+    background: #39ff14;
+    border-color: #fff200;
+    transform: translateX(5px);
+}
+
+.contacto-status {
+    animation: contactoPulso 1.4s infinite alternate ease-in-out;
+}
+
+
+/* ==================================================
+CONTACTO - RAPIDO
+================================================== */
+
+.contacto-rapido {
+    padding: 24px;
+    background:
+        linear-gradient(135deg, rgba(255,255,255,0.94), rgba(57,255,20,0.18));
+    color: #00110d;
+    border: 5px ridge #39ff14;
+    box-shadow:
+        7px 7px 0 rgba(0,0,0,0.38),
+        0 0 18px rgba(57,255,20,0.45);
+}
+
+.contacto-rapido h2 {
+    margin-bottom: 18px;
+    font-family: Impact, Verdana, sans-serif;
+    font-size: 38px;
+    color: #006b54;
+    text-shadow:
+        2px 2px 0 #ffffff,
+        4px 4px 0 #39ff14;
+}
+
+.contacto-rapido-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.contacto-rapido-grid article {
+    padding: 16px;
+    background:
+        linear-gradient(to bottom, #ffffff, #dfffff);
+    border: 4px outset #ffffff;
+    box-shadow: 5px 5px 0 rgba(0,0,0,0.28);
+    transition: all 0.2s ease;
+}
+
+.contacto-rapido-grid article:hover {
+    transform: translateY(-6px) rotate(1deg);
+    background:
+        linear-gradient(to bottom, #ffffff, #fff7b8);
+    box-shadow:
+        0 0 18px rgba(57,255,20,0.65),
+        6px 6px 0 rgba(0,0,0,0.36);
+}
+
+.contacto-rapido-grid span {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 34px;
+}
+
+.contacto-rapido-grid h3 {
+    margin-bottom: 8px;
+    font-family: "Comic Sans MS", Verdana, sans-serif;
+    color: #006b54;
+    text-shadow: 1px 1px 0 #39ff14;
+}
+
+.contacto-rapido-grid p {
+    font-size: 13px;
+    line-height: 1.45;
+}
+
+
+/* ==================================================
+CONTACTO - FINAL
+================================================== */
+
+.contacto-final {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 22px;
+    padding: 24px;
+    background:
+        linear-gradient(to right, #000000, #006b54, #00110d);
+    border: 5px ridge #00ffff;
+    box-shadow:
+        0 0 22px rgba(0,255,255,0.6),
+        8px 8px 0 rgba(0,0,0,0.42);
+}
+
+.contacto-final h2 {
+    margin-bottom: 8px;
+    font-family: Impact, Verdana, sans-serif;
+    font-size: 38px;
+    color: #39ff14;
+    text-shadow:
+        2px 2px 0 #000000,
+        0 0 10px #39ff14;
+}
+
+.contacto-final p {
+    max-width: 760px;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #dff6ff;
+}
+
+.contacto-final a {
+    min-width: 160px;
+    text-align: center;
+    padding: 13px 20px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    background:
+        linear-gradient(to bottom, #ffffff, #39ff14, #00ffff);
+    border: 4px outset #ffffff;
+    border-radius: 26px;
+    box-shadow:
+        inset 0 2px 6px rgba(255,255,255,0.95),
+        0 6px 0 #006b54,
+        0 0 18px rgba(57,255,20,0.75);
+}
+
+
+/* ==================================================
+CONTACTO - FOOTER
+================================================== */
+
+.pagina-contacto .footer-y2k {
+    background:
+        linear-gradient(to bottom, #006b54, #00261f, #000000);
+    border-top: 5px ridge #39ff14;
+}
+
+.pagina-contacto .footer-copy {
+    background: #00110d;
+}
+
+
+/* ==================================================
+CONTACTO - ANIMACION
+================================================== */
+
+@keyframes contactoPulso {
+    from {
+        box-shadow:
+            0 0 10px rgba(57,255,20,0.35),
+            5px 5px 0 rgba(0,0,0,0.38);
+    }
+
+    to {
+        box-shadow:
+            0 0 22px rgba(57,255,20,0.85),
+            5px 5px 0 rgba(0,0,0,0.38);
+    }
+}
+
+
+/* ==================================================
+RESPONSIVE CONTACTO
+================================================== */
+
+@media screen and (max-width: 1000px) {
+    .contacto-hero,
+    .contacto-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contacto-info-panel {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contacto-status {
+        grid-column: span 2;
+    }
+
+    .contacto-rapido-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .contacto-wrapper {
+        width: 100%;
+        margin: 0;
+    }
+
+    .contacto-layout {
+        padding: 14px;
+    }
+
+    .contacto-hero-texto h2 {
+        font-size: 42px;
+    }
+
+    .terminal-top,
+    .contacto-box-title {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contacto-info-panel,
+    .contacto-rapido-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contacto-status {
+        grid-column: auto;
+    }
+
+    .contacto-final {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contacto-final a {
+        width: 100%;
+    }
+}
+/* ==================================================
+PERFIL - ESTILO ID DIGITAL / SISTEMA BIOMETRICO RETRO
+================================================== */
+
+body.pagina-perfil {
+    min-height: 100vh;
+    color: #dff6ff;
+    background-color: #00111f;
+    background-image:
+        radial-gradient(circle at 18% 20%, rgba(0,255,255,0.30), transparent 18%),
+        radial-gradient(circle at 84% 12%, rgba(255,0,255,0.22), transparent 18%),
+        radial-gradient(circle at 58% 82%, rgba(57,255,20,0.18), transparent 22%),
+        linear-gradient(135deg, #00111f, #003c66, #000000);
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+body.pagina-perfil::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -2;
+    background:
+        linear-gradient(rgba(0,255,255,0.07) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,255,255,0.07) 1px, transparent 1px);
+    background-size: 32px 32px;
+}
+
+body.pagina-perfil::after {
+    content: "DIGITAL ID / CREATIVE USER / ARIEL SANTAMARIA";
+    position: fixed;
+    left: -160px;
+    top: 46%;
+    z-index: -1;
+    font-family: Impact, Verdana, sans-serif;
+    font-size: 64px;
+    letter-spacing: 5px;
+    color: rgba(0,255,255,0.08);
+    transform: rotate(-12deg);
+    white-space: nowrap;
+}
+
+
+/* ==================================================
+PERFIL - WRAPPER
+================================================== */
+
+.perfil-wrapper {
+    width: 92%;
+    max-width: 1280px;
+    margin: 28px auto;
+    background:
+        linear-gradient(135deg, rgba(0,20,45,0.94), rgba(0,80,120,0.82));
+    border: 5px ridge #00ffff;
+    box-shadow:
+        0 0 28px rgba(0,255,255,0.65),
+        0 0 50px rgba(255,0,255,0.28),
+        10px 10px 0 rgba(0,0,0,0.55);
+}
+
+
+/* ==================================================
+PERFIL - HEADER
+================================================== */
+
+.pagina-perfil .barra-superior {
+    background:
+        linear-gradient(to right, #00111f, #004d7a, #00ffff);
+    color: #ffffff;
+    border-bottom: 5px ridge #00ffff;
+    text-shadow:
+        2px 2px 0 #000000,
+        0 0 8px #00ffff;
+}
+
+.pagina-perfil .logo-animado {
+    background:
+        radial-gradient(circle, #ffffff, #00ffff, #003c66);
+    color: #00111f;
+    border: 4px solid #ffffff;
+    box-shadow:
+        0 0 18px #00ffff,
+        0 0 30px #00ffff;
+}
+
+.pagina-perfil .contador-visitas {
+    background: #000000;
+    color: #00ffff;
+    border: 3px inset #00ffff;
+    text-shadow: 0 0 8px #00ffff;
+}
+
+
+/* ==================================================
+PERFIL - MARQUEE Y NAVBAR
+================================================== */
+
+.pagina-perfil .marquee-box {
+    background:
+        linear-gradient(to right, #000000, #00ffff, #003c66, #ff00ff);
+    color: #ffffff;
+    border-top: 3px solid #00ffff;
+    border-bottom: 3px solid #00ffff;
+    text-shadow:
+        1px 1px 0 #000000,
+        0 0 8px #00ffff;
+}
+
+.pagina-perfil .navbar {
+    background:
+        linear-gradient(to bottom, #00111f, #002b4d, #003c66);
+    border-bottom: 4px double #00ffff;
+}
+
+.pagina-perfil .navbar a {
+    color: #00ffff;
+    background:
+        linear-gradient(to bottom, #002b4d, #00111f, #000000);
+    border: 3px outset #00ffff;
+    border-radius: 5px;
+    box-shadow:
+        inset 0 0 10px rgba(0,255,255,0.22),
+        0 4px 0 #000000,
+        0 0 12px rgba(0,255,255,0.45);
+    text-shadow: 0 0 8px #00ffff;
+}
+
+.pagina-perfil .navbar a:hover {
+    color: #000000;
+    background:
+        linear-gradient(to bottom, #ffffff, #00ffff, #39ff14);
+    transform: translateY(-5px);
+    text-shadow: 1px 1px 0 #ffffff;
+}
+
+
+/* ==================================================
+PERFIL - LAYOUT
+================================================== */
+
+.perfil-layout-nuevo {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+
+/* ==================================================
+PERFIL - ID DIGITAL
+================================================== */
+
+.perfil-id-digital {
+    background:
+        linear-gradient(135deg, rgba(255,255,255,0.94), rgba(0,255,255,0.20));
+    color: #00111f;
+    border: 5px ridge #00ffff;
+    box-shadow:
+        8px 8px 0 rgba(0,0,0,0.38),
+        0 0 24px rgba(0,255,255,0.65);
+    overflow: hidden;
+    position: relative;
+}
+
+.perfil-id-digital::before {
+    content: "ACCESS GRANTED";
+    position: absolute;
+    top: 76px;
+    right: -42px;
+    z-index: 2;
+    padding: 8px 42px;
+    background: #39ff14;
+    color: #000000;
+    border: 3px solid #000000;
+    font-family: Impact, Verdana, sans-serif;
+    font-size: 20px;
+    transform: rotate(18deg);
+    box-shadow: 4px 4px 0 rgba(0,0,0,0.35);
+}
+
+.perfil-id-barra {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 10px 14px;
+    background:
+        linear-gradient(to right, #00111f, #003c66, #00ffff);
+    color: #ffffff;
+    border-bottom: 4px solid #00111f;
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+    text-shadow: 1px 1px 0 #000000;
+}
+
+.perfil-id-contenido {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 26px;
+    padding: 28px;
+    align-items: center;
+}
+
+
+/* ==================================================
+PERFIL - FOTO SCAN
+================================================== */
+
+.perfil-foto-scan {
+    position: relative;
+    padding: 12px;
+    background: #ffffff;
+    border: 5px double #003c66;
+    box-shadow:
+        7px 7px 0 rgba(0,0,0,0.35),
+        inset 0 0 20px rgba(0,255,255,0.28);
+    transform: rotate(-2deg);
+}
+
+.perfil-foto-scan img {
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+    display: block;
+    border: 5px ridge #00ffff;
+}
+
+.scan-line {
+    position: absolute;
+    left: 18px;
+    right: 18px;
+    top: 20px;
+    height: 5px;
+    background: #39ff14;
+    box-shadow:
+        0 0 10px #39ff14,
+        0 0 20px #39ff14;
+    animation: scanPerfil 2.6s infinite alternate ease-in-out;
+}
+
+.perfil-foto-scan p {
+    margin-top: 8px;
+    padding: 6px;
+    background: #000000;
+    color: #39ff14;
+    font-family: "Courier New", monospace;
+    font-size: 12px;
+    text-align: center;
+}
+
+
+/* ==================================================
+PERFIL - INFO PRINCIPAL
+================================================== */
+
+.perfil-tag {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 5px 8px;
+    background: #000000;
+    color: #39ff14;
+    border: 2px inset #d6e4f0;
+    font-family: "Courier New", monospace;
+    font-size: 12px;
+}
+
+.perfil-info-principal h2 {
+    margin-bottom: 12px;
+    font-family: Impact, Verdana, sans-serif;
+    font-size: 64px;
+    line-height: 0.92;
+    color: #003c66;
+    text-shadow:
+        2px 2px 0 #ffffff,
+        5px 5px 0 #00ffff,
+        8px 8px 0 #ff00ff;
+}
+
+.perfil-info-principal h3 {
+    display: inline-block;
+    margin-bottom: 14px;
+    padding: 8px 12px;
+    background:
+        linear-gradient(to right, #003c66, #00ffff, #ff00ff);
+    color: #ffffff;
+    border: 3px outset #ffffff;
+    font-family: "Comic Sans MS", Verdana, sans-serif;
+    text-shadow: 1px 1px 0 #000000;
+}
+
+.perfil-ubicacion {
+    margin-bottom: 12px;
+    font-weight: bold;
+    color: #003c66;
+}
+
+.perfil-info-principal p {
+    max-width: 760px;
+    margin-bottom: 12px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+/* ==================================================
+PERFIL - BOTONES
+================================================== */
+
+.perfil-botones-nuevo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.perfil-botones-nuevo a {
+    padding: 12px 18px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    background:
+        linear-gradient(to bottom, #ffffff, #00ffff, #39ff14);
+    border: 4px outset #ffffff;
+    border-radius: 26px;
+    box-shadow:
+        inset 0 2px 6px rgba(255,255,255,0.95),
+        0 6px 0 #006b6b,
+        0 0 18px rgba(0,255,255,0.7);
+}
+
+.perfil-botones-nuevo a:hover {
+    transform: translateY(-5px) rotate(-2deg);
+    background:
+        linear-gradient(to bottom, #ffffff, #fff200, #ff00ff);
+}
+
+
+/* ==================================================
+PERFIL - SISTEMA GRID
+================================================== */
+
+.perfil-sistema-grid {
+    display: grid;
+    grid-template-columns: 0.95fr 1.05fr;
+    gap: 24px;
+}
+
+.perfil-terminal-box {
+    padding: 22px;
+    background: #020202;
+    color: #39ff14;
+    border: 5px inset #00ffff;
+    font-family: "Courier New", monospace;
+    box-shadow:
+        0 0 22px rgba(57,255,20,0.55),
+        inset 0 0 24px rgba(57,255,20,0.14);
+}
+
+.perfil-terminal-box h2 {
+    margin-bottom: 14px;
+    color: #00ffff;
+    font-size: 22px;
+}
+
+.perfil-terminal-box p {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.perfil-terminal-box span {
+    color: #fff200;
+}
+
+.perfil-sobre-box {
+    padding: 24px;
+    background:
+        linear-gradient(135deg, rgba(255,255,255,0.94), rgba(255,242,0,0.18));
+    color: #00111f;
+    border: 5px double #ff00ff;
+    box-shadow:
+        7px 7px 0 rgba(0,0,0,0.35),
+        0 0 18px rgba(255,0,255,0.45);
+}
+
+.perfil-sobre-box h2,
+.perfil-section-title h2,
+.perfil-herramientas-nuevo h2,
+.perfil-final-nuevo h2 {
+    margin-bottom: 12px;
+    font-family: Impact, Verdana, sans-serif;
+    font-size: 38px;
+    color: #003c66;
+    text-shadow:
+        2px 2px 0 #ffffff,
+        4px 4px 0 #00ffff;
+}
+
+.perfil-sobre-box p {
+    margin-bottom: 12px;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+
+/* ==================================================
+PERFIL - HABILIDADES
+================================================== */
+
+.perfil-habilidades-nuevo {
+    padding: 24px;
+    background:
+        linear-gradient(135deg, rgba(255,255,255,0.94), rgba(0,255,255,0.18));
+    color: #00111f;
+    border: 5px ridge #00ffff;
+    box-shadow:
+        7px 7px 0 rgba(0,0,0,0.38),
+        0 0 18px rgba(0,255,255,0.45);
+}
+
+.perfil-section-title {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    align-items: end;
+    margin-bottom: 18px;
+}
+
+.perfil-section-title p {
+    padding: 5px 8px;
+    background: #000000;
+    color: #39ff14;
+    border: 2px dashed #00ffff;
+    font-family: "Courier New", monospace;
+    font-size: 12px;
+}
+
+.perfil-habilidades-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.perfil-habilidades-grid article {
+    padding: 18px;
+    background:
+        linear-gradient(to bottom, #ffffff, #dfffff);
+    border: 4px outset #ffffff;
+    box-shadow:
+        5px 5px 0 rgba(0,0,0,0.28),
+        inset 0 0 14px rgba(255,255,255,0.85);
+    transition: all 0.2s ease;
+}
+
+.perfil-habilidades-grid article:hover {
+    transform: translateY(-6px) rotate(1deg);
+    background:
+        linear-gradient(to bottom, #ffffff, #fff7b8);
+    box-shadow:
+        0 0 18px #00ffff,
+        6px 6px 0 rgba(0,0,0,0.38);
+}
+
+.perfil-habilidades-grid span {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 5px 8px;
+    background: #000000;
+    color: #39ff14;
+    border: 2px dashed #00ffff;
+    font-family: "Courier New", monospace;
+    font-size: 12px;
+}
+
+.perfil-habilidades-grid h3 {
+    margin-bottom: 8px;
+    font-family: "Comic Sans MS", Verdana, sans-serif;
+    color: #ff00ff;
+    text-shadow: 1px 1px 0 #fff200;
+}
+
+.perfil-habilidades-grid p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+/* ==================================================
+PERFIL - HERRAMIENTAS
+================================================== */
+
+.perfil-herramientas-nuevo {
+    padding: 24px;
+    background:
+        linear-gradient(to right, rgba(0,0,0,0.94), rgba(0,40,65,0.94));
+    border: 5px ridge #39ff14;
+    box-shadow:
+        0 0 22px rgba(57,255,20,0.6),
+        7px 7px 0 rgba(0,0,0,0.38);
+}
+
+.perfil-herramientas-nuevo h2 {
+    color: #fff200;
+    text-shadow:
+        2px 2px 0 #000000,
+        0 0 10px #fff200;
+}
+
+.perfil-tools-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.perfil-tools-grid span {
+    padding: 8px 12px;
+    background: #000000;
+    color: #39ff14;
+    border: 2px dashed #00ffff;
+    font-family: "Courier New", monospace;
+    font-size: 13px;
+    box-shadow:
+        0 0 8px rgba(57,255,20,0.65),
+        inset 0 0 6px rgba(0,255,255,0.22);
+}
+
+.perfil-tools-grid span:nth-child(even) {
+    color: #fff200;
+    border-color: #ff00ff;
+}
+
+
+/* ==================================================
+PERFIL - FINAL
+================================================== */
+
+.perfil-final-nuevo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 22px;
+    padding: 24px;
+    background:
+        linear-gradient(to right, #000000, #003c66, #00111f);
+    border: 5px ridge #00ffff;
+    box-shadow:
+        0 0 22px rgba(0,255,255,0.6),
+        8px 8px 0 rgba(0,0,0,0.42);
+}
+
+.perfil-final-nuevo h2 {
+    color: #00ffff;
+    text-shadow:
+        2px 2px 0 #000000,
+        0 0 10px #00ffff;
+}
+
+.perfil-final-nuevo p {
+    max-width: 760px;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #dff6ff;
+}
+
+.perfil-final-nuevo a {
+    min-width: 150px;
+    text-align: center;
+    padding: 13px 20px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    background:
+        linear-gradient(to bottom, #ffffff, #00ffff, #39ff14);
+    border: 4px outset #ffffff;
+    border-radius: 26px;
+    box-shadow:
+        inset 0 2px 6px rgba(255,255,255,0.95),
+        0 6px 0 #006b6b,
+        0 0 18px rgba(0,255,255,0.75);
+}
+
+
+/* ==================================================
+PERFIL - FOOTER
+================================================== */
+
+.pagina-perfil .footer-y2k {
+    background:
+        linear-gradient(to bottom, #003c66, #00111f, #000000);
+    border-top: 5px ridge #00ffff;
+}
+
+.pagina-perfil .footer-copy {
+    background: #00111f;
+}
+
+
+/* ==================================================
+PERFIL - ANIMACION
+================================================== */
+
+@keyframes scanPerfil {
+    from {
+        top: 20px;
+        opacity: 0.45;
+    }
+
+    to {
+        top: 335px;
+        opacity: 1;
+    }
+}
+
+
+/* ==================================================
+RESPONSIVE PERFIL
+================================================== */
+
+@media screen and (max-width: 1000px) {
+    .perfil-id-contenido,
+    .perfil-sistema-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .perfil-foto-scan {
+        max-width: 340px;
+        margin: 0 auto;
+    }
+
+    .perfil-habilidades-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .perfil-info-principal h2 {
+        font-size: 46px;
+    }
+
+    .perfil-final-nuevo {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .perfil-final-nuevo a {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .perfil-wrapper {
+        width: 100%;
+        margin: 0;
+    }
+
+    .perfil-layout-nuevo {
+        padding: 14px;
+    }
+
+    .perfil-id-contenido {
+        padding: 18px;
+    }
+
+    .perfil-info-principal h2 {
+        font-size: 36px;
+    }
+
+    .perfil-habilidades-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .perfil-section-title {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .perfil-botones-nuevo a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .perfil-id-digital::before {
+        display: none;
+    }
+}
+/* ==================================================
+PROYECTOS - ESTILO MUSEO WEBCORE / GALERIA DIGITAL
+================================================== */
+
+body.pagina-proyectos {
+    min-height: 100vh;
+    color: #101010;
+    background-color: #12001f;
+    background-image:
+        radial-gradient(circle at 18% 20%, rgba(255,0,255,0.35), transparent 18%),
+        radial-gradient(circle at 86% 14%, rgba(0,255,255,0.35), transparent 18%),
+        radial-gradient(circle at 52% 82%, rgba(255,242,0,0.24), transparent 22%),
+        linear-gradient(135deg, #12001f, #260044, #000000);
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+body.pagina-proyectos::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -2;
+    background:
+        repeating-linear-gradient(
+            90deg,
+            rgba(255,255,255,0.04),
+            rgba(255,255,255,0.04) 1px,
+            transparent 1px,
+            transparent 36px
+        ),
+        repeating-linear-gradient(
+            0deg,
+            rgba(255,255,255,0.04),
+            rgba(255,255,255,0.04) 1px,
+            transparent 1px,
+            transparent 36px
+        );
+}
+
+body.pagina-proyectos::after {
+    content: "DIGITAL GALLERY / VISUAL ARCHIVE / CREATIVE EXHIBITS";
+    position: fixed;
+    left: -170px;
+    top: 45%;
+    z-index: -1;
+    font-family: Impact, Verdana, sans-serif;
+    font-size: 68px;
+    letter-spacing: 5px;
+    color: rgba(255,255,255,0.06);
+    transform: rotate(-12deg);
+    white-space: nowrap;
+}
+
+
+/* ==================================================
+PROYECTOS - WRAPPER
+================================================== */
+
+.proyectos-wrapper {
+    width: 94%;
+    max-width: 1340px;
+    margin: 28px auto;
+    background:
+        linear-gradient(135deg, rgba(255,255,255,0.90), rgba(220,240,255,0.78));
+    border: 6px ridge #ff00ff;
+    box-shadow:
+        0 0 28px rgba(255,0,255,0.65),
+        0 0 50px rgba(0,255,255,0.35),
+        12px 12px 0 rgba(0,0,0,0.52);
+}
+
+
+/* ==================================================
+PROYECTOS - HEADER
+================================================== */
+
+.pagina-proyectos .barra-superior {
+    background:
+        linear-gradient(to right, #12001f, #ff00ff, #00ffff, #fff200);
+    color: #ffffff;
+    border-bottom: 6px ridge #ffffff;
+    text-shadow:
+        2px 2px 0 #000000,
+        0 0 10px #ff00ff;
+}
+
+.pagina-proyectos .logo-animado {
+    background:
+        radial-gradient(circle, #ffffff, #ff00ff, #12001f);
+    color: #ffffff;
+    border: 4px solid #ffffff;
+    box-shadow:
+        0 0 18px #ff00ff,
+        0 0 30px #00ffff;
+}
+
+.pagina-proyectos .contador-visitas {
+    background: #000000;
+    color: #fff200;
+    border: 3px inset #ff00ff;
+    text-shadow: 0 0 8px #fff200;
+}
+
+
+/* ==================================================
+PROYECTOS - MARQUEE Y NAVBAR
+================================================== */
+
+.pagina-proyectos .marquee-box {
+    background:
+        linear-gradient(to right, #000000, #ff00ff, #00ffff, #fff200, #000000);
+    color: #ffffff;
+    border-top: 3px solid #ffffff;
+    border-bottom: 3px solid #ff00ff;
+    text-shadow:
+        1px 1px 0 #000000,
+        0 0 8px #00ffff;
+}
+
+.pagina-proyectos .navbar {
+    background:
+        linear-gradient(to bottom, #ffffff, #e7d6ff, #ffb8ec);
+    border-bottom: 6px double #12001f;
+}
+
+.pagina-proyectos .navbar a {
+    color: #ffffff;
+    background:
+        linear-gradient(to bottom, #ff00ff, #7000a8, #12001f);
+    border: 3px outset #ffffff;
+    border-radius: 2px;
+    box-shadow:
+        inset 0 2px 5px rgba(255,255,255,0.55),
+        0 5px 0 #000000,
+        0 0 12px rgba(255,0,255,0.6);
+    text-shadow: 1px 1px 0 #000000;
+}
+
+.pagina-proyectos .navbar a:hover {
+    color: #000000;
+    background:
+        linear-gradient(to bottom, #ffffff, #00ffff, #fff200);
+    transform: translateY(-5px) rotate(-1deg);
+    text-shadow: 1px 1px 0 #ffffff;
+}
+
+
+/* ==================================================
+PROYECTOS - LAYOUT
+================================================== */
+
+.proyectos-museo-layout {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+
+/* ==================================================
+PROYECTOS - HERO MUSEO
+================================================== */
+
+.proyectos-museo-hero {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 26px;
+    align-items: center;
+    padding: 28px;
+    background:
+        linear-gradient(135deg, rgba(255,255,255,0.96), rgba(0,255,255,0.18)),
+        repeating-linear-gradient(
+            -45deg,
+            rgba(255,0,255,0.14),
+            rgba(255,0,255,0.14) 12px,
+            rgba(255,242,0,0.16) 12px,
+            rgba(255,242,0,0.16) 24px
+        );
+    border: 6px double #12001f;
+    box-shadow:
+        8px 8px 0 rgba(0,0,0,0.36),
+        0 0 22px rgba(255,0,255,0.55);
+    position: relative;
+    overflow: hidden;
+}
+
+.proyectos-museo-hero::before {
+    content: "OPEN EXHIBITION";
+    position: absolute;
+    top: 28px;
+    right: -42px;
+    padding: 8px 46px;
+    background: #fff200;
+    color: #000000;
+    border: 3px solid #000000;
+    font-family: Impact, Verdana, sans-serif;
+    font-size: 22px;
+    transform: rotate(18deg);
+    box-shadow: 4px 4px 0 rgba(0,0,0,0.35);
+}
+
+.museo-ticket {
+    min-height: 230px;
+    padding: 18px;
+    background:
+        linear-gradient(to bottom, #ffffff, #fff7b8);
+    border: 5px dashed #12001f;
+    box-shadow:
+        7px 7px 0 rgba(0,0,0,0.30),
+        inset 0 0 20px rgba(255,0,255,0.18);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    transform: rotate(-3deg);
+}
+
+.museo-ticket span {
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+    color: #ff00ff;
+    margin-bottom: 10px;
+}
+
+.museo-ticket strong {
+    font-family: Impact, Verdana, sans-serif;
+    font-size: 42px;
+    line-height: 0.95;
+    color: #12001f;
+    text-shadow:
+        2px 2px 0 #ffffff,
+        4px 4px 0 #00ffff;
+}
+
+.museo-ticket small {
+    margin-top: 14px;
+    padding: 6px;
+    background: #000000;
+    color: #39ff14;
+    font-family: "Courier New", monospace;
+}
+
+.proyectos-label {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 5px 8px;
+    background: #000000;
+    color: #39ff14;
+    border: 2px inset #d6e4f0;
+    font-family: "Courier New", monospace;
+    font-size: 12px;
+}
+
+.museo-hero-texto h2 {
+    margin-bottom: 14px;
+    font-family: Impact, Verdana, sans-serif;
+    font-size: 62px;
+    line-height: 0.92;
+    color: #ff00ff;
+    text-shadow:
+        2px 2px 0 #ffffff,
+        5px 5px 0 #00ffff,
+        8px 8px 0 #12001f;
+}
+
+.museo-hero-texto p {
+    max-width: 760px;
+    margin-bottom: 12px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+/* ==================================================
+PROYECTOS - FILTROS MUSEO
+================================================== */
+
+.proyectos-filtros-museo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+    padding: 16px;
+    background:
+        linear-gradient(to right, #12001f, #ff00ff, #00ffff);
+    border: 5px ridge #ffffff;
+    box-shadow: 6px 6px 0 rgba(0,0,0,0.35);
+}
+
+.proyectos-filtros-museo span {
+    color: #fff200;
+    font-family: Impact, Verdana, sans-serif;
+    font-size: 22px;
+    text-shadow: 1px 1px 0 #000000;
+}
+
+.proyectos-filtros-museo a {
+    padding: 8px 12px;
+    color: #39ff14;
+    background: #000000;
+    border: 2px dashed #00ffff;
+    text-decoration: none;
+    font-family: "Courier New", monospace;
+    font-size: 12px;
+    font-weight: bold;
+    box-shadow: 0 0 8px rgba(57,255,20,0.55);
+}
+
+.proyectos-filtros-museo a:hover {
+    color: #000000;
+    background: #fff200;
+    border-color: #ff00ff;
+    transform: scale(1.08) rotate(-2deg);
+}
+
+
+/* ==================================================
+PROYECTOS - GALERIA
+================================================== */
+
+.proyectos-galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(280px, auto);
+    gap: 22px;
+}
+
+.proyecto-exhibit {
+    background:
+        linear-gradient(to bottom, #ffffff, #dfffff);
+    border: 5px outset #ffffff;
+    box-shadow:
+        7px 7px 0 rgba(0,0,0,0.35),
+        0 0 16px rgba(0,255,255,0.35);
+    overflow: hidden;
+    transition: all 0.2s ease;
+}
+
+.proyecto-exhibit:hover {
+    transform: translateY(-8px) rotate(-1deg) scale(1.02);
+    box-shadow:
+        0 0 20px #ff00ff,
+        0 0 30px #00ffff,
+        9px 9px 0 rgba(0,0,0,0.48);
+}
+
+.exhibit-grande {
+    grid-column: span 2;
+}
+
+.exhibit-alto {
+    grid-row: span 2;
+}
+
+.exhibit-imagen {
+    min-height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 5px ridge #12001f;
+    position: relative;
+    overflow: hidden;
+}
+
+.exhibit-imagen::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        repeating-linear-gradient(
+            45deg,
+            rgba(255,255,255,0.22),
+            rgba(255,255,255,0.22) 10px,
+            rgba(0,0,0,0.08) 10px,
+            rgba(0,0,0,0.08) 20px
+        );
+}
+
+.exhibit-imagen span {
+    position: relative;
+    z-index: 2;
+    padding: 9px 16px;
+    background: rgba(0,0,0,0.78);
+    color: #ffffff;
+    border: 4px ridge #ffffff;
+    font-family: Impact, Verdana, sans-serif;
+    font-size: 34px;
+    letter-spacing: 2px;
+    text-shadow:
+        2px 2px 0 #000000,
+        0 0 12px #00ffff;
+}
+
+.exhibit-branding {
+    background:
+        radial-gradient(circle at 20% 20%, #fff200, transparent 30%),
+        linear-gradient(135deg, #ff00ff, #00ffff, #12001f);
+}
+
+.exhibit-social {
+    background:
+        radial-gradient(circle at 80% 20%, #39ff14, transparent 30%),
+        linear-gradient(135deg, #fff200, #ff00ff, #00ffff);
+}
+
+.exhibit-video {
+    background:
+        radial-gradient(circle at center, #00ffff, transparent 30%),
+        linear-gradient(135deg, #000000, #12001f, #ff00ff);
+}
+
+.exhibit-web {
+    min-height: 300px;
+    background:
+        radial-gradient(circle at 20% 80%, #fff200, transparent 30%),
+        linear-gradient(135deg, #001f66, #00ffff, #000000);
+}
+
+.exhibit-y2k {
+    background:
+        radial-gradient(circle at 50% 20%, #00ffff, transparent 30%),
+        linear-gradient(135deg, #000000, #ff00ff, #fff200);
+}
+
+.exhibit-proceso {
+    background:
+        radial-gradient(circle at center, #fff200, transparent 32%),
+        linear-gradient(135deg, #39ff14, #00ffff, #ff00ff);
+}
+
+.exhibit-info {
+    padding: 18px;
+}
+
+.exhibit-numero {
+    display: inline-block;
+    margin-bottom: 8px;
+    padding: 5px 8px;
+    background: #000000;
+    color: #39ff14;
+    border: 2px inset #d6e4f0;
+    font-family: "Courier New", monospace;
+    font-size: 12px;
+}
+
+.exhibit-info h3 {
+    margin-bottom: 8px;
+    font-family: "Comic Sans MS", Verdana, sans-serif;
+    color: #ff00ff;
+    font-size: 24px;
+    text-shadow: 1px 1px 0 #fff200;
+}
+
+.exhibit-info p {
+    margin-bottom: 12px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.exhibit-info a {
+    display: inline-block;
+    padding: 9px 14px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    background:
+        linear-gradient(to bottom, #ff00ff, #7000a8, #12001f);
+    border: 3px outset #ffffff;
+    border-radius: 18px;
+    text-shadow: 1px 1px 0 #000000;
+    box-shadow:
+        inset 0 2px 5px rgba(255,255,255,0.7),
+        0 4px 0 #000000;
+}
+
+.exhibit-info a:hover {
+    color: #000000;
+    background:
+        linear-gradient(to bottom, #ffffff, #fff200, #39ff14);
+    text-shadow: 1px 1px 0 #ffffff;
+}
+
+
+/* ==================================================
+PROYECTOS - ARCHIVO VISUAL
+================================================== */
+
+.proyectos-archivo-visual {
+    background:
+        linear-gradient(135deg, rgba(0,0,0,0.92), rgba(42,0,72,0.9));
+    color: #ffffff;
+    border: 6px ridge #00ffff;
+    box-shadow:
+        0 0 22px rgba(0,255,255,0.6),
+        8px 8px 0 rgba(0,0,0,0.4);
+    overflow: hidden;
+}
+
+.archivo-visual-title {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 10px 14px;
+    background:
+        linear-gradient(to right, #00ffff, #ff00ff, #fff200);
+    color: #000000;
+    border-bottom: 4px solid #000000;
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+}
+
+.archivo-visual-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    padding: 22px;
+}
+
+.archivo-visual-grid article {
+    padding: 16px;
+    background:
+        linear-gradient(to bottom, #ffffff, #dfffff);
+    color: #000000;
+    border: 4px outset #ffffff;
+    box-shadow: 5px 5px 0 rgba(0,0,0,0.35);
+}
+
+.archivo-visual-grid h3 {
+    margin-bottom: 8px;
+    font-family: Impact, Verdana, sans-serif;
+    font-size: 26px;
+    color: #ff00ff;
+    text-shadow: 1px 1px 0 #fff200;
+}
+
+.archivo-visual-grid p {
+    font-size: 13px;
+    line-height: 1.45;
+}
+
+
+/* ==================================================
+PROYECTOS - FINAL
+================================================== */
+
+.proyectos-final {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 22px;
+    padding: 24px;
+    background:
+        linear-gradient(to right, #12001f, #ff00ff, #00ffff);
+    color: #ffffff;
+    border: 6px ridge #ffffff;
+    box-shadow:
+        0 0 22px rgba(255,0,255,0.65),
+        8px 8px 0 rgba(0,0,0,0.38);
+}
+
+.proyectos-final h2 {
+    margin-bottom: 8px;
+    font-family: Impact, Verdana, sans-serif;
+    font-size: 38px;
+    color: #fff200;
+    text-shadow:
+        2px 2px 0 #000000,
+        0 0 10px #fff200;
+}
+
+.proyectos-final p {
+    max-width: 760px;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.proyectos-final a {
+    min-width: 170px;
+    text-align: center;
+    padding: 13px 20px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    background:
+        linear-gradient(to bottom, #ffffff, #fff200, #39ff14);
+    border: 4px outset #ffffff;
+    border-radius: 26px;
+    box-shadow:
+        inset 0 2px 6px rgba(255,255,255,0.95),
+        0 6px 0 #006b2d,
+        0 0 18px rgba(57,255,20,0.75);
+}
+
+
+/* ==================================================
+PROYECTOS - FOOTER
+================================================== */
+
+.pagina-proyectos .footer-y2k {
+    background:
+        linear-gradient(to bottom, #12001f, #260044, #000000);
+    border-top: 6px ridge #ff00ff;
+}
+
+.pagina-proyectos .footer-copy {
+    background: #12001f;
+}
+
+
+/* ==================================================
+RESPONSIVE PROYECTOS MUSEO
+================================================== */
+
+@media screen and (max-width: 1100px) {
+    .proyectos-museo-hero {
+        grid-template-columns: 1fr;
+    }
+
+    .museo-ticket {
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
+    .proyectos-galeria {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .exhibit-grande,
+    .exhibit-alto {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .archivo-visual-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .proyectos-wrapper {
+        width: 100%;
+        margin: 0;
+    }
+
+    .proyectos-museo-layout {
+        padding: 14px;
+    }
+
+    .museo-hero-texto h2 {
+        font-size: 40px;
+    }
+
+    .proyectos-galeria {
+        grid-template-columns: 1fr;
+    }
+
+    .archivo-visual-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .archivo-visual-title {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .proyectos-filtros-museo {
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+    }
+
+    .proyectos-final {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .proyectos-final a {
+        width: 100%;
+    }
+
+    .proyectos-museo-hero::before {
+        display: none;
     }
 }
