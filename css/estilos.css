@@ -4740,19 +4740,19 @@ RESPONSIVE CONTACTO
     }
 }
 /* ==================================================
-PERFIL - ESTILO ID DIGITAL / SISTEMA BIOMETRICO RETRO
+PERFIL - ESTILO ID DIGITAL / MYSPACE CYBER PROFILE
 ================================================== */
 
 body.pagina-perfil {
     min-height: 100vh;
-    color: #dff6ff;
-    background-color: #00111f;
+    color: #ffffff;
+    background-color: #000000;
     background-image:
-        radial-gradient(circle at 18% 20%, rgba(0,255,255,0.30), transparent 18%),
-        radial-gradient(circle at 84% 12%, rgba(255,0,255,0.22), transparent 18%),
-        radial-gradient(circle at 58% 82%, rgba(57,255,20,0.18), transparent 22%),
-        linear-gradient(135deg, #00111f, #003c66, #000000);
-    background-attachment: fixed;
+        linear-gradient(rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.72)),
+        url("../img/backgrounds/myspace-blue-bg.gif");
+    background-repeat: repeat, repeat;
+    background-size: auto, 320px;
+    background-attachment: fixed, fixed;
     overflow-x: hidden;
 }
 
@@ -4762,9 +4762,10 @@ body.pagina-perfil::before {
     inset: 0;
     z-index: -2;
     background:
-        linear-gradient(rgba(0,255,255,0.07) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(0,255,255,0.07) 1px, transparent 1px);
+        linear-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
     background-size: 32px 32px;
+    pointer-events: none;
 }
 
 body.pagina-perfil::after {
@@ -4776,9 +4777,10 @@ body.pagina-perfil::after {
     font-family: Impact, Verdana, sans-serif;
     font-size: 64px;
     letter-spacing: 5px;
-    color: rgba(0,255,255,0.08);
+    color: rgba(255, 255, 255, 0.08);
     transform: rotate(-12deg);
     white-space: nowrap;
+    pointer-events: none;
 }
 
 
@@ -4791,12 +4793,12 @@ PERFIL - WRAPPER
     max-width: 1280px;
     margin: 28px auto;
     background:
-        linear-gradient(135deg, rgba(0,20,45,0.94), rgba(0,80,120,0.82));
-    border: 5px ridge #00ffff;
+        linear-gradient(135deg, rgba(0, 0, 0, 0.94), rgba(28, 28, 28, 0.88));
+    border: 5px ridge #ffffff;
     box-shadow:
-        0 0 28px rgba(0,255,255,0.65),
-        0 0 50px rgba(255,0,255,0.28),
-        10px 10px 0 rgba(0,0,0,0.55);
+        0 0 28px rgba(255, 255, 255, 0.45),
+        0 0 50px rgba(255, 255, 255, 0.18),
+        10px 10px 0 rgba(0, 0, 0, 0.75);
 }
 
 
@@ -4806,29 +4808,29 @@ PERFIL - HEADER
 
 .pagina-perfil .barra-superior {
     background:
-        linear-gradient(to right, #00111f, #004d7a, #00ffff);
+        linear-gradient(to right, #000000, #1f1f1f, #ffffff);
     color: #ffffff;
-    border-bottom: 5px ridge #00ffff;
+    border-bottom: 5px ridge #ffffff;
     text-shadow:
         2px 2px 0 #000000,
-        0 0 8px #00ffff;
+        0 0 8px #ffffff;
 }
 
 .pagina-perfil .logo-animado {
     background:
-        radial-gradient(circle, #ffffff, #00ffff, #003c66);
-    color: #00111f;
+        radial-gradient(circle, #ffffff, #bfbfbf, #000000);
+    color: #000000;
     border: 4px solid #ffffff;
     box-shadow:
-        0 0 18px #00ffff,
-        0 0 30px #00ffff;
+        0 0 18px #ffffff,
+        0 0 30px rgba(255, 255, 255, 0.65);
 }
 
 .pagina-perfil .contador-visitas {
     background: #000000;
-    color: #00ffff;
-    border: 3px inset #00ffff;
-    text-shadow: 0 0 8px #00ffff;
+    color: #ffffff;
+    border: 3px inset #ffffff;
+    text-shadow: 0 0 8px #ffffff;
 }
 
 
@@ -4838,38 +4840,38 @@ PERFIL - MARQUEE Y NAVBAR
 
 .pagina-perfil .marquee-box {
     background:
-        linear-gradient(to right, #000000, #00ffff, #003c66, #ff00ff);
-    color: #ffffff;
-    border-top: 3px solid #00ffff;
-    border-bottom: 3px solid #00ffff;
+        linear-gradient(to right, #000000, #ffffff, #777777, #000000);
+    color: #000000;
+    border-top: 3px solid #ffffff;
+    border-bottom: 3px solid #ffffff;
     text-shadow:
-        1px 1px 0 #000000,
-        0 0 8px #00ffff;
+        1px 1px 0 #ffffff,
+        0 0 8px #ffffff;
 }
 
 .pagina-perfil .navbar {
     background:
-        linear-gradient(to bottom, #00111f, #002b4d, #003c66);
-    border-bottom: 4px double #00ffff;
+        linear-gradient(to bottom, #000000, #111111, #222222);
+    border-bottom: 4px double #ffffff;
 }
 
 .pagina-perfil .navbar a {
-    color: #00ffff;
+    color: #ffffff;
     background:
-        linear-gradient(to bottom, #002b4d, #00111f, #000000);
-    border: 3px outset #00ffff;
+        linear-gradient(to bottom, #333333, #111111, #000000);
+    border: 3px outset #ffffff;
     border-radius: 5px;
     box-shadow:
-        inset 0 0 10px rgba(0,255,255,0.22),
+        inset 0 0 10px rgba(255, 255, 255, 0.18),
         0 4px 0 #000000,
-        0 0 12px rgba(0,255,255,0.45);
-    text-shadow: 0 0 8px #00ffff;
+        0 0 12px rgba(255, 255, 255, 0.35);
+    text-shadow: 0 0 8px #ffffff;
 }
 
 .pagina-perfil .navbar a:hover {
     color: #000000;
     background:
-        linear-gradient(to bottom, #ffffff, #00ffff, #39ff14);
+        linear-gradient(to bottom, #ffffff, #dcdcdc, #9a9a9a);
     transform: translateY(-5px);
     text-shadow: 1px 1px 0 #ffffff;
 }
@@ -4893,30 +4895,30 @@ PERFIL - ID DIGITAL
 
 .perfil-id-digital {
     background:
-        linear-gradient(135deg, rgba(255,255,255,0.94), rgba(0,255,255,0.20));
-    color: #00111f;
-    border: 5px ridge #00ffff;
+        linear-gradient(135deg, rgba(230, 251, 255, 0.96), rgba(255, 255, 255, 0.20));
+    color: #04111d;
+    border: 5px ridge #ffffff;
     box-shadow:
-        8px 8px 0 rgba(0,0,0,0.38),
-        0 0 24px rgba(0,255,255,0.65);
+        8px 8px 0 rgba(0, 0, 0, 0.35),
+        0 0 24px rgba(255, 255, 255, 0.40);
     overflow: hidden;
     position: relative;
 }
 
 .perfil-id-digital::before {
-    content: "ACCESS GRANTED";
+    content: "PROFILE ONLINE";
     position: absolute;
-    top: 76px;
-    right: -42px;
+    top: 74px;
+    right: -40px;
     z-index: 2;
-    padding: 8px 42px;
-    background: #39ff14;
+    padding: 8px 40px;
+    background: #ffffff;
     color: #000000;
     border: 3px solid #000000;
     font-family: Impact, Verdana, sans-serif;
     font-size: 20px;
     transform: rotate(18deg);
-    box-shadow: 4px 4px 0 rgba(0,0,0,0.35);
+    box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.35);
 }
 
 .perfil-id-barra {
@@ -4925,9 +4927,9 @@ PERFIL - ID DIGITAL
     gap: 12px;
     padding: 10px 14px;
     background:
-        linear-gradient(to right, #00111f, #003c66, #00ffff);
+        linear-gradient(to right, #02070d, #14354f, #ffffff);
     color: #ffffff;
-    border-bottom: 4px solid #00111f;
+    border-bottom: 4px solid #02070d;
     font-family: "Courier New", monospace;
     font-weight: bold;
     text-shadow: 1px 1px 0 #000000;
@@ -4950,10 +4952,10 @@ PERFIL - FOTO SCAN
     position: relative;
     padding: 12px;
     background: #ffffff;
-    border: 5px double #003c66;
+    border: 5px double #1d4d70;
     box-shadow:
-        7px 7px 0 rgba(0,0,0,0.35),
-        inset 0 0 20px rgba(0,255,255,0.28);
+        7px 7px 0 rgba(0, 0, 0, 0.35),
+        inset 0 0 20px rgba(255, 255, 255, 0.20);
     transform: rotate(-2deg);
 }
 
@@ -4962,7 +4964,7 @@ PERFIL - FOTO SCAN
     height: 330px;
     object-fit: cover;
     display: block;
-    border: 5px ridge #00ffff;
+    border: 5px ridge #ffffff;
 }
 
 .scan-line {
@@ -4971,10 +4973,10 @@ PERFIL - FOTO SCAN
     right: 18px;
     top: 20px;
     height: 5px;
-    background: #39ff14;
+    background: #ffffff;
     box-shadow:
-        0 0 10px #39ff14,
-        0 0 20px #39ff14;
+        0 0 10px #ffffff,
+        0 0 20px #ffffff;
     animation: scanPerfil 2.6s infinite alternate ease-in-out;
 }
 
@@ -4982,7 +4984,7 @@ PERFIL - FOTO SCAN
     margin-top: 8px;
     padding: 6px;
     background: #000000;
-    color: #39ff14;
+    color: #ffffff;
     font-family: "Courier New", monospace;
     font-size: 12px;
     text-align: center;
@@ -4998,7 +5000,7 @@ PERFIL - INFO PRINCIPAL
     margin-bottom: 10px;
     padding: 5px 8px;
     background: #000000;
-    color: #39ff14;
+    color: #ffffff;
     border: 2px inset #d6e4f0;
     font-family: "Courier New", monospace;
     font-size: 12px;
@@ -5009,11 +5011,10 @@ PERFIL - INFO PRINCIPAL
     font-family: Impact, Verdana, sans-serif;
     font-size: 64px;
     line-height: 0.92;
-    color: #003c66;
+    color: #111111;
     text-shadow:
         2px 2px 0 #ffffff,
-        5px 5px 0 #00ffff,
-        8px 8px 0 #ff00ff;
+        5px 5px 0 #ffffff;
 }
 
 .perfil-info-principal h3 {
@@ -5021,7 +5022,7 @@ PERFIL - INFO PRINCIPAL
     margin-bottom: 14px;
     padding: 8px 12px;
     background:
-        linear-gradient(to right, #003c66, #00ffff, #ff00ff);
+        linear-gradient(to right, #111111, #ffffff, #c8f8ff);
     color: #ffffff;
     border: 3px outset #ffffff;
     font-family: "Comic Sans MS", Verdana, sans-serif;
@@ -5031,7 +5032,7 @@ PERFIL - INFO PRINCIPAL
 .perfil-ubicacion {
     margin-bottom: 12px;
     font-weight: bold;
-    color: #003c66;
+    color: #111111;
 }
 
 .perfil-info-principal p {
@@ -5039,6 +5040,26 @@ PERFIL - INFO PRINCIPAL
     margin-bottom: 12px;
     font-size: 16px;
     line-height: 1.6;
+}
+
+.perfil-mini-datos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 16px;
+    margin-bottom: 10px;
+}
+
+.perfil-mini-datos span {
+    padding: 7px 12px;
+    background: #020202;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    font-size: 12px;
+    font-family: "Courier New", monospace;
+    box-shadow:
+        0 0 8px rgba(255, 255, 255, 0.30),
+        inset 0 0 6px rgba(255, 255, 255, 0.15);
 }
 
 
@@ -5059,19 +5080,19 @@ PERFIL - BOTONES
     text-decoration: none;
     font-weight: bold;
     background:
-        linear-gradient(to bottom, #ffffff, #00ffff, #39ff14);
+        linear-gradient(to bottom, #ffffff, #dcdcdc, #ffffff);
     border: 4px outset #ffffff;
     border-radius: 26px;
     box-shadow:
-        inset 0 2px 6px rgba(255,255,255,0.95),
-        0 6px 0 #006b6b,
-        0 0 18px rgba(0,255,255,0.7);
+        inset 0 2px 6px rgba(255, 255, 255, 0.95),
+        0 6px 0 #555555,
+        0 0 16px rgba(255, 255, 255, 0.55);
 }
 
 .perfil-botones-nuevo a:hover {
     transform: translateY(-5px) rotate(-2deg);
     background:
-        linear-gradient(to bottom, #ffffff, #fff200, #ff00ff);
+        linear-gradient(to bottom, #ffffff, #ffffff, #ffffff);
 }
 
 
@@ -5088,17 +5109,17 @@ PERFIL - SISTEMA GRID
 .perfil-terminal-box {
     padding: 22px;
     background: #020202;
-    color: #39ff14;
-    border: 5px inset #00ffff;
+    color: #ffffff;
+    border: 5px inset #ffffff;
     font-family: "Courier New", monospace;
     box-shadow:
-        0 0 22px rgba(57,255,20,0.55),
-        inset 0 0 24px rgba(57,255,20,0.14);
+        0 0 22px rgba(255, 255, 255, 0.30),
+        inset 0 0 24px rgba(255, 255, 255, 0.08);
 }
 
 .perfil-terminal-box h2 {
     margin-bottom: 14px;
-    color: #00ffff;
+    color: #ffffff;
     font-size: 22px;
 }
 
@@ -5108,18 +5129,18 @@ PERFIL - SISTEMA GRID
 }
 
 .perfil-terminal-box span {
-    color: #fff200;
+    color: #ffffff;
 }
 
 .perfil-sobre-box {
     padding: 24px;
     background:
-        linear-gradient(135deg, rgba(255,255,255,0.94), rgba(255,242,0,0.18));
-    color: #00111f;
-    border: 5px double #ff00ff;
+        linear-gradient(135deg, rgba(240, 252, 255, 0.95), rgba(255, 255, 255, 0.18));
+    color: #04111d;
+    border: 5px double #ffffff;
     box-shadow:
-        7px 7px 0 rgba(0,0,0,0.35),
-        0 0 18px rgba(255,0,255,0.45);
+        7px 7px 0 rgba(0, 0, 0, 0.35),
+        0 0 18px rgba(255, 255, 255, 0.25);
 }
 
 .perfil-sobre-box h2,
@@ -5129,10 +5150,10 @@ PERFIL - SISTEMA GRID
     margin-bottom: 12px;
     font-family: Impact, Verdana, sans-serif;
     font-size: 38px;
-    color: #003c66;
+    color: #111111;
     text-shadow:
         2px 2px 0 #ffffff,
-        4px 4px 0 #00ffff;
+        4px 4px 0 #9fefff;
 }
 
 .perfil-sobre-box p {
@@ -5143,18 +5164,127 @@ PERFIL - SISTEMA GRID
 
 
 /* ==================================================
+PERFIL - EXTRA INFO
+================================================== */
+
+.perfil-extra-info {
+    padding: 24px;
+    background:
+        linear-gradient(135deg, rgba(234, 251, 255, 0.95), rgba(255, 255, 255, 0.16));
+    color: #04111d;
+    border: 5px ridge #ffffff;
+    box-shadow:
+        7px 7px 0 rgba(0, 0, 0, 0.35),
+        0 0 18px rgba(255, 255, 255, 0.22);
+}
+
+.perfil-extra-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.perfil-extra-card {
+    padding: 18px;
+    background:
+        linear-gradient(to bottom, #ffffff, #dff8ff);
+    border: 4px outset #ffffff;
+    box-shadow:
+        5px 5px 0 rgba(0, 0, 0, 0.25),
+        inset 0 0 12px rgba(255, 255, 255, 0.12);
+}
+
+.perfil-extra-card h3 {
+    margin-bottom: 12px;
+    font-family: "Comic Sans MS", Verdana, sans-serif;
+    color: #111111;
+}
+
+.perfil-extra-card ul {
+    padding-left: 18px;
+}
+
+.perfil-extra-card li {
+    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+/* ==================================================
+PERFIL - DATOS RAPIDOS
+================================================== */
+
+.perfil-datos-rapidos {
+    padding: 24px;
+    background:
+        linear(to right, rgba(0, 0, 0, 0.94), rgba(255, 255, 255, 0.94));
+    border: 5px ridge #ffffff;
+    box-shadow:
+        0 0 22px rgba(255, 255, 255, 0.35),
+        7px 7px 0 rgba(0, 0, 0, 0.38);
+}
+
+.perfil-datos-rapidos .perfil-section-title h2 {
+    color: #ffffff;
+    text-shadow:
+        2px 2px 0 #000000,
+        0 0 10px #ffffff;
+}
+
+.perfil-datos-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+.perfil-dato-card {
+    padding: 18px;
+    background:
+        linear-gradient(to bottom, #000000, #000000);
+    border: 4px outset #ffffff;
+    color: #ffffff;
+    box-shadow:
+        inset 0 0 10px rgba(255, 255, 255, 0.10),
+        5px 5px 0 rgba(0, 0, 0, 0.30);
+}
+
+.perfil-dato-num {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 5px 8px;
+    background: #000000;
+    color: #ffffff;
+    border: 2px dashed #ffffff;
+    font-family: "Courier New", monospace;
+    font-size: 12px;
+}
+
+.perfil-dato-card h3 {
+    margin-bottom: 8px;
+    font-family: "Comic Sans MS", Verdana, sans-serif;
+    color: #9fefff;
+}
+
+.perfil-dato-card p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+/* ==================================================
 PERFIL - HABILIDADES
 ================================================== */
 
 .perfil-habilidades-nuevo {
     padding: 24px;
     background:
-        linear-gradient(135deg, rgba(255,255,255,0.94), rgba(0,255,255,0.18));
-    color: #00111f;
-    border: 5px ridge #00ffff;
+        linear-gradient(135deg, rgba(240, 252, 255, 0.95), rgba(255, 255, 255, 0.15));
+    color: #04111d;
+    border: 5px ridge #ffffff;
     box-shadow:
-        7px 7px 0 rgba(0,0,0,0.38),
-        0 0 18px rgba(0,255,255,0.45);
+        7px 7px 0 rgba(0, 0, 0, 0.38),
+        0 0 18px rgba(255, 255, 255, 0.25);
 }
 
 .perfil-section-title {
@@ -5168,8 +5298,8 @@ PERFIL - HABILIDADES
 .perfil-section-title p {
     padding: 5px 8px;
     background: #000000;
-    color: #39ff14;
-    border: 2px dashed #00ffff;
+    color: #ffffff;
+    border: 2px dashed #ffffff;
     font-family: "Courier New", monospace;
     font-size: 12px;
 }
@@ -5183,21 +5313,21 @@ PERFIL - HABILIDADES
 .perfil-habilidades-grid article {
     padding: 18px;
     background:
-        linear-gradient(to bottom, #ffffff, #dfffff);
+        linear-gradient(to bottom, #ffffff, #e8fbff);
     border: 4px outset #ffffff;
     box-shadow:
-        5px 5px 0 rgba(0,0,0,0.28),
-        inset 0 0 14px rgba(255,255,255,0.85);
+        5px 5px 0 rgba(0, 0, 0, 0.28),
+        inset 0 0 14px rgba(255, 255, 255, 0.85);
     transition: all 0.2s ease;
 }
 
 .perfil-habilidades-grid article:hover {
     transform: translateY(-6px) rotate(1deg);
     background:
-        linear-gradient(to bottom, #ffffff, #fff7b8);
+        linear-gradient(to bottom, #ffffff, #d8f8ff);
     box-shadow:
-        0 0 18px #00ffff,
-        6px 6px 0 rgba(0,0,0,0.38);
+        0 0 18px #ffffff,
+        6px 6px 0 rgba(0, 0, 0, 0.38);
 }
 
 .perfil-habilidades-grid span {
@@ -5205,8 +5335,8 @@ PERFIL - HABILIDADES
     margin-bottom: 10px;
     padding: 5px 8px;
     background: #000000;
-    color: #39ff14;
-    border: 2px dashed #00ffff;
+    color: #ffffff;
+    border: 2px dashed #ffffff;
     font-family: "Courier New", monospace;
     font-size: 12px;
 }
@@ -5214,8 +5344,7 @@ PERFIL - HABILIDADES
 .perfil-habilidades-grid h3 {
     margin-bottom: 8px;
     font-family: "Comic Sans MS", Verdana, sans-serif;
-    color: #ff00ff;
-    text-shadow: 1px 1px 0 #fff200;
+    color: #111111;
 }
 
 .perfil-habilidades-grid p {
@@ -5231,18 +5360,18 @@ PERFIL - HERRAMIENTAS
 .perfil-herramientas-nuevo {
     padding: 24px;
     background:
-        linear-gradient(to right, rgba(0,0,0,0.94), rgba(0,40,65,0.94));
-    border: 5px ridge #39ff14;
+        linear-gradient(to right, rgba(0, 0, 0, 0.94), rgba(9, 24, 36, 0.94));
+    border: 5px ridge #ffffff;
     box-shadow:
-        0 0 22px rgba(57,255,20,0.6),
-        7px 7px 0 rgba(0,0,0,0.38);
+        0 0 22px rgba(255, 255, 255, 0.35),
+        7px 7px 0 rgba(0, 0, 0, 0.38);
 }
 
 .perfil-herramientas-nuevo h2 {
-    color: #fff200;
+    color: #ffffff;
     text-shadow:
         2px 2px 0 #000000,
-        0 0 10px #fff200;
+        0 0 10px #ffffff;
 }
 
 .perfil-tools-grid {
@@ -5254,18 +5383,18 @@ PERFIL - HERRAMIENTAS
 .perfil-tools-grid span {
     padding: 8px 12px;
     background: #000000;
-    color: #39ff14;
-    border: 2px dashed #00ffff;
+    color: #ffffff;
+    border: 2px dashed #ffffff;
     font-family: "Courier New", monospace;
     font-size: 13px;
     box-shadow:
-        0 0 8px rgba(57,255,20,0.65),
-        inset 0 0 6px rgba(0,255,255,0.22);
+        0 0 8px rgba(255, 255, 255, 0.35),
+        inset 0 0 6px rgba(255, 255, 255, 0.10);
 }
 
 .perfil-tools-grid span:nth-child(even) {
-    color: #fff200;
-    border-color: #ff00ff;
+    color: #ffffff;
+    border-color: #ffffff;
 }
 
 
@@ -5280,18 +5409,18 @@ PERFIL - FINAL
     gap: 22px;
     padding: 24px;
     background:
-        linear-gradient(to right, #000000, #003c66, #00111f);
-    border: 5px ridge #00ffff;
+        linear-gradient(to right, #000000, #111111, #050b12);
+    border: 5px ridge #ffffff;
     box-shadow:
-        0 0 22px rgba(0,255,255,0.6),
-        8px 8px 0 rgba(0,0,0,0.42);
+        0 0 22px rgba(255, 255, 255, 0.35),
+        8px 8px 0 rgba(0, 0, 0, 0.42);
 }
 
 .perfil-final-nuevo h2 {
-    color: #00ffff;
+    color: #ffffff;
     text-shadow:
         2px 2px 0 #000000,
-        0 0 10px #00ffff;
+        0 0 10px #ffffff;
 }
 
 .perfil-final-nuevo p {
@@ -5309,13 +5438,13 @@ PERFIL - FINAL
     text-decoration: none;
     font-weight: bold;
     background:
-        linear-gradient(to bottom, #ffffff, #00ffff, #39ff14);
+        linear-gradient(to bottom, #ffffff, #dcdcdc, #ffffff);
     border: 4px outset #ffffff;
     border-radius: 26px;
     box-shadow:
-        inset 0 2px 6px rgba(255,255,255,0.95),
-        0 6px 0 #006b6b,
-        0 0 18px rgba(0,255,255,0.75);
+        inset 0 2px 6px rgba(255, 255, 255, 0.95),
+        0 6px 0 #555555,
+        0 0 18px rgba(255, 255, 255, 0.45);
 }
 
 
@@ -5325,12 +5454,12 @@ PERFIL - FOOTER
 
 .pagina-perfil .footer-y2k {
     background:
-        linear-gradient(to bottom, #003c66, #00111f, #000000);
-    border-top: 5px ridge #00ffff;
+        linear-gradient(to bottom, #111111, #08131d, #000000);
+    border-top: 5px ridge #ffffff;
 }
 
 .pagina-perfil .footer-copy {
-    background: #00111f;
+    background: #06101a;
 }
 
 
@@ -5357,7 +5486,9 @@ RESPONSIVE PERFIL
 
 @media screen and (max-width: 1000px) {
     .perfil-id-contenido,
-    .perfil-sistema-grid {
+    .perfil-sistema-grid,
+    .perfil-extra-grid,
+    .perfil-datos-grid {
         grid-template-columns: 1fr;
     }
 
