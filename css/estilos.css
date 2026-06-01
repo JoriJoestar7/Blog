@@ -3143,45 +3143,18 @@ BLOG - ESTILO MYSPACE / WEBLOG OLD INTERNET
 
 body.pagina-blog {
     min-height: 100vh;
-    color: #1b1024;
-    background-color: #ffd6f3;
+    color: #ffd6f3;
+    background-color: #050005;
     background-image:
-        radial-gradient(circle at 20% 20%, rgba(255,255,255,0.8), transparent 15%),
-        radial-gradient(circle at 80% 15%, rgba(255,0,255,0.28), transparent 18%),
-        radial-gradient(circle at 60% 80%, rgba(0,255,255,0.35), transparent 20%),
-        linear-gradient(135deg, #ffd6f3, #d7ffff, #fff7b8);
-    background-attachment: fixed;
+        linear-gradient(rgba(5, 0, 5, 0.78), rgba(15, 0, 15, 0.82)),
+        url("../img/backgrounds/stars_pink.gif");
+    background-repeat: repeat, repeat;
+    background-size: auto, auto;
+    background-attachment: fixed, fixed;
     overflow-x: hidden;
 }
 
-body.pagina-blog::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    z-index: -2;
-    background:
-        repeating-linear-gradient(
-            45deg,
-            rgba(255,255,255,0.35),
-            rgba(255,255,255,0.35) 10px,
-            rgba(255,0,255,0.08) 10px,
-            rgba(255,0,255,0.08) 20px
-        );
-}
 
-body.pagina-blog::after {
-    content: "WEBLOG / MYSPACE / DIARY / CREATIVE NOTES";
-    position: fixed;
-    left: -160px;
-    top: 45%;
-    z-index: -1;
-    font-family: Impact, Verdana, sans-serif;
-    font-size: 62px;
-    letter-spacing: 5px;
-    color: rgba(255,0,255,0.09);
-    transform: rotate(-12deg);
-    white-space: nowrap;
-}
 
 
 /* ==================================================
@@ -3702,12 +3675,322 @@ BLOG - FOOTER
 .pagina-blog .footer-copy {
     background: #1b1024;
 }
+/* ==================================================
+BLOG - AJUSTE ROSADO / NEGRO MYSPACE
+================================================== */
+
+.blog-wrapper {
+    background:
+        linear-gradient(135deg, rgba(20, 0, 20, 0.94), rgba(60, 0, 55, 0.86));
+    border: 5px double #ff8adf;
+    box-shadow:
+        0 0 25px rgba(255, 0, 255, 0.65),
+        0 0 45px rgba(255, 138, 223, 0.30),
+        10px 10px 0 rgba(0, 0, 0, 0.45);
+}
+
+.pagina-blog .barra-superior {
+    background:
+        linear-gradient(to right, #050005, #8b008b, #ff00ff, #ff8adf);
+    color: #ffffff;
+    border-bottom: 5px double #ff8adf;
+}
+
+.pagina-blog .navbar {
+    background:
+        linear-gradient(to bottom, #050005, #1b001b, #3a003a);
+    border-bottom: 5px ridge #ff8adf;
+}
+
+.pagina-blog .navbar a {
+    color: #ffffff;
+    background:
+        linear-gradient(to bottom, #ff8adf, #ff00ff, #5f005f);
+    border: 3px outset #ffd6f3;
+    box-shadow:
+        inset 0 2px 5px rgba(255,255,255,0.65),
+        0 4px 0 #260026,
+        0 0 12px rgba(255,0,255,0.55);
+}
+
+.pagina-blog .marquee-box {
+    background:
+        linear-gradient(to right, #050005, #ff00ff, #ff8adf, #050005);
+    color: #ffffff;
+    border-top: 3px solid #ff8adf;
+    border-bottom: 3px solid #ff8adf;
+    text-shadow: 1px 1px 0 #000000;
+}
+
+.blog-hero-personal {
+    border-color: #ff8adf;
+    background:
+        linear-gradient(135deg, rgba(255, 214, 243, 0.96), rgba(255, 138, 223, 0.82));
+    box-shadow:
+        7px 7px 0 rgba(0,0,0,0.38),
+        0 0 18px rgba(255,0,255,0.45);
+}
+
+.blog-post {
+    background:
+        linear-gradient(to bottom, #ffd6f3, #ffffff);
+    border: 5px ridge #ff8adf;
+    box-shadow:
+        7px 7px 0 rgba(0,0,0,0.38),
+        0 0 18px rgba(255,0,255,0.55);
+}
+
+.blog-post-destacado {
+    border: 6px double #ffffff;
+    background:
+        linear-gradient(135deg, #ffd6f3, #ff8adf, #ffffff);
+    box-shadow:
+        0 0 24px rgba(255, 138, 223, 0.85),
+        9px 9px 0 rgba(0,0,0,0.45);
+}
+
+.post-header {
+    background:
+        linear-gradient(to right, #050005, #8b008b, #ff00ff);
+    color: #ffffff;
+    border-bottom: 4px solid #ff8adf;
+}
+
+.post-content {
+    color: #1b001b;
+}
+
+.post-content h2 {
+    color: #8b008b;
+    text-shadow:
+        2px 2px 0 #ffffff,
+        4px 4px 0 #ff8adf;
+}
+
+.post-content h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: "Comic Sans MS", Verdana, sans-serif;
+    color: #ff00ff;
+    text-shadow:
+        1px 1px 0 #ffffff,
+        2px 2px 0 #1b001b;
+}
+
+.blog-frase-destacada {
+    margin-top: 18px;
+    padding: 16px;
+    background: #050005;
+    color: #ffd6f3;
+    border: 3px dashed #ff8adf;
+    font-family: "Courier New", monospace;
+    font-size: 14px;
+    box-shadow:
+        0 0 16px rgba(255, 0, 255, 0.45),
+        inset 0 0 10px rgba(255, 138, 223, 0.20);
+}
+
+.blog-label,
+.post-fecha {
+    background: #050005;
+    color: #ff8adf;
+    border: 2px inset #ffd6f3;
+}
+
+.pagina-blog .footer-y2k {
+    background:
+        linear-gradient(to bottom, #8b008b, #3a003a, #050005);
+    border-top: 5px ridge #ff8adf;
+}
+
+.pagina-blog .footer-copy {
+    background: #050005;
+}
+/* ==================================================
+BLOG - GIFS DECORATIVOS MYSPACE
+================================================== */
+
+.blog-gifs-deco {
+    position: fixed;
+    inset: 0;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.blog-gif {
+    position: fixed;
+    width: 62px;
+    height: auto;
+    image-rendering: pixelated;
+    opacity: 0.82;
+    filter:
+        drop-shadow(0 0 10px rgba(255, 0, 255, 0.75))
+        contrast(1.12);
+    pointer-events: none;
+}
+
+.blog-gif-01 {
+    top: 100px;
+    left: 22px;
+    animation: saltar 1s infinite alternate;
+}
+
+.blog-gif-02 {
+    top: 180px;
+    right: 34px;
+    animation: flotarUno 5s infinite alternate ease-in-out;
+}
+
+.blog-gif-03 {
+    top: 320px;
+    left: 28px;
+    animation: girarLogo 6s linear infinite;
+}
+
+.blog-gif-04 {
+    top: 390px;
+    right: 44px;
+    width: 50px;
+    animation: temblor 0.45s infinite;
+}
+
+.blog-gif-05 {
+    bottom: 155px;
+    left: 38px;
+    animation: flotarDos 5.5s infinite alternate ease-in-out;
+}
+
+.blog-gif-06 {
+    bottom: 130px;
+    right: 40px;
+    animation: flotarTres 5s infinite alternate ease-in-out;
+}
+
+.blog-gif-07 {
+    top: 535px;
+    left: 78px;
+    animation: flotarUno 6s infinite alternate ease-in-out;
+}
+
+.blog-gif-08 {
+    bottom: 45px;
+    right: 105px;
+    animation: girarLogo 9s linear infinite;
+}
 
 
 /* ==================================================
-RESPONSIVE BLOG
+BLOG - STATUS FLOTANTE
 ================================================== */
 
+.blog-status-floating {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    z-index: 30;
+    padding: 12px 16px;
+    background:
+        linear-gradient(to bottom, #050005, #3a003a);
+    color: #ffd6f3;
+    border: 4px ridge #ff8adf;
+    font-family: "Courier New", monospace;
+    font-size: 12px;
+    line-height: 1.35;
+    text-align: center;
+    box-shadow:
+        0 0 18px rgba(255,0,255,0.75),
+        6px 6px 0 rgba(0,0,0,0.45);
+    animation: flotarDos 4s infinite alternate ease-in-out;
+}
+/* ==================================================
+BLOG - IMAGENES EN POSTS / MYSPACE MAGAZINE
+================================================== */
+
+.blog-post-image {
+    width: 285px;
+    margin: 8px 0 18px 0;
+    padding: 10px;
+    background:
+        linear-gradient(to bottom, #050005, #3a003a);
+    border: 5px ridge #ff8adf;
+    box-shadow:
+        0 0 18px rgba(255, 0, 255, 0.55),
+        7px 7px 0 rgba(0, 0, 0, 0.38);
+    transform: rotate(-2deg);
+}
+
+.blog-post-image-right {
+    float: right;
+    margin-left: 22px;
+}
+
+.blog-post-image-left {
+    float: left;
+    margin-right: 22px;
+}
+
+.blog-post-image img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+    border: 4px outset #ffd6f3;
+    background: #ffffff;
+    filter:
+        contrast(1.05)
+        saturate(0.92);
+}
+
+.blog-post-image figcaption {
+    margin-top: 8px;
+    padding: 6px;
+    background: #000000;
+    color: #ff8adf;
+    border: 2px inset #ffd6f3;
+    font-family: "Courier New", monospace;
+    font-size: 11px;
+    text-align: center;
+}
+
+.blog-post-image:hover {
+    transform: rotate(1deg) scale(1.03);
+    box-shadow:
+        0 0 24px rgba(255, 138, 223, 0.85),
+        9px 9px 0 rgba(0, 0, 0, 0.45);
+}
+
+.post-content::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+/* ==================================================
+RESPONSIVE BLOG
+================================================== */
+@media screen and (max-width: 700px) {
+    .blog-post-image,
+    .blog-post-image-right,
+    .blog-post-image-left {
+        float: none;
+        width: 100%;
+        margin: 14px 0 18px 0;
+        transform: rotate(0deg);
+    }
+
+    .blog-post-image img {
+        height: 240px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .blog-gifs-deco,
+    .blog-status-floating {
+        display: none;
+    }
+
+    .post-content h2 {
+        font-size: 34px;
+    }
+}   
 @media screen and (max-width: 1100px) {
     .blog-layout {
         grid-template-columns: 1fr;
