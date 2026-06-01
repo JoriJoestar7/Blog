@@ -5361,12 +5361,61 @@ CONTACTO - ANIMACION
             5px 5px 0 rgba(0,0,0,0.38);
     }
 }
+/* ==================================================
+CONTACTO - BOTON WHATSAPP
+================================================== */
 
+.btn-whatsapp-contacto {
+    display: inline-block;
+    padding: 12px 18px;
+    color: #00110d;
+    text-decoration: none;
+    font-weight: bold;
+    background:
+        linear-gradient(to bottom, #ffffff, #39ff14, #00c853);
+    border: 4px outset #ffffff;
+    border-radius: 24px;
+    font-family: Verdana, Tahoma, sans-serif;
+    box-shadow:
+        inset 0 2px 6px rgba(255, 255, 255, 0.95),
+        0 5px 0 #006b2d,
+        0 0 16px rgba(57, 255, 20, 0.75);
+    text-shadow: 1px 1px 0 #ffffff;
+    transition: all 0.2s ease;
+}
+
+.btn-whatsapp-contacto::before {
+    content: "☎ ";
+}
+
+.btn-whatsapp-contacto:hover {
+    transform: translateY(-4px) rotate(-2deg);
+    color: #000000;
+    background:
+        linear-gradient(to bottom, #ffffff, #b6ff00, #39ff14);
+    box-shadow:
+        inset 0 2px 6px rgba(255, 255, 255, 0.95),
+        0 7px 0 #004d20,
+        0 0 22px rgba(57, 255, 20, 0.95);
+}
+
+.btn-whatsapp-contacto:active {
+    transform: translateY(2px);
+    box-shadow:
+        inset 0 2px 6px rgba(0, 0, 0, 0.25),
+        0 2px 0 #004d20,
+        0 0 10px rgba(57, 255, 20, 0.65);
+}
 
 /* ==================================================
 RESPONSIVE CONTACTO
 ================================================== */
-
+@media screen and (max-width: 700px) {
+    .btn-whatsapp-contacto {
+        width: 100%;
+        text-align: center;
+    }
+}
 @media screen and (max-width: 1000px) {
     .contacto-hero,
     .contacto-grid {
