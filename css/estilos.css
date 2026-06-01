@@ -2294,38 +2294,14 @@ body.pagina-experiencia {
     color: #ffffff;
     background-color: #090014;
     background-image:
-        radial-gradient(circle at 20% 20%, rgba(255,0,255,0.35), transparent 18%),
-        radial-gradient(circle at 80% 15%, rgba(0,255,255,0.35), transparent 18%),
-        radial-gradient(circle at 50% 80%, rgba(255,242,0,0.2), transparent 22%),
-        linear-gradient(135deg, #090014, #180033, #000000);
-    background-attachment: fixed;
+        linear-gradient(rgba(9, 0, 20, 0.82), rgba(0, 0, 0, 0.88)),
+        url("../img/backgrounds/stars.gif");
+    background-repeat: repeat, repeat;
+    background-size: auto, auto;
+    background-attachment: fixed, fixed;
     overflow-x: hidden;
 }
 
-body.pagina-experiencia::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    z-index: -2;
-    background:
-        linear-gradient(rgba(255,255,255,0.06) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255,255,255,0.06) 1px, transparent 1px);
-    background-size: 34px 34px;
-}
-
-body.pagina-experiencia::after {
-    content: "CAREER MODE / EXPERIENCE / PRESS START";
-    position: fixed;
-    left: -120px;
-    bottom: 110px;
-    z-index: -1;
-    font-family: Impact, Verdana, sans-serif;
-    font-size: 64px;
-    letter-spacing: 5px;
-    color: rgba(255,255,255,0.06);
-    transform: rotate(-10deg);
-    white-space: nowrap;
-}
 
 
 /* ==================================================
@@ -2870,11 +2846,238 @@ EXPERIENCIA - FOOTER
     background: #100020;
 }
 
+/* ==================================================
+EXPERIENCIA - BOTONES CV
+================================================== */
 
+.experiencia-cv-botones {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 18px;
+}
+
+.experiencia-cv-botones a {
+    display: inline-block;
+    padding: 12px 18px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    background:
+        linear-gradient(to bottom, #ffffff, #fff200, #ff00ff);
+    border: 4px outset #ffffff;
+    border-radius: 24px;
+    font-family: Verdana, Tahoma, sans-serif;
+    box-shadow:
+        inset 0 2px 6px rgba(255,255,255,0.95),
+        0 6px 0 #870087,
+        0 0 16px rgba(255,0,255,0.65);
+    text-shadow: 1px 1px 0 #ffffff;
+}
+
+.experiencia-cv-botones a:hover {
+    transform: translateY(-5px) rotate(-2deg);
+    background:
+        linear-gradient(to bottom, #ffffff, #00ffff, #39ff14);
+}
+/* ==================================================
+EXPERIENCIA - LEVELS / SKILLS XP
+================================================== */
+
+.experiencia-levels {
+    background:
+        linear-gradient(135deg, rgba(0,0,0,0.88), rgba(40,0,70,0.90));
+    color: #ffffff;
+    border: 5px ridge #00ffff;
+    box-shadow:
+        0 0 22px rgba(0,255,255,0.60),
+        8px 8px 0 rgba(0,0,0,0.45);
+    overflow: hidden;
+}
+
+.experiencia-levels-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    padding: 22px;
+}
+
+.experiencia-levels-grid article {
+    padding: 16px;
+    background:
+        linear-gradient(to bottom, #ffffff, #dfffff);
+    color: #000000;
+    border: 4px outset #ffffff;
+    box-shadow:
+        5px 5px 0 rgba(0,0,0,0.45),
+        inset 0 0 12px rgba(255,255,255,0.88);
+}
+
+.level-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 10px;
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+}
+
+.level-top span {
+    color: #250047;
+}
+
+.level-top strong {
+    color: #ff00ff;
+}
+
+.level-bar {
+    height: 22px;
+    background: #000000;
+    border: 3px inset #d6e4f0;
+    overflow: hidden;
+}
+
+.level-bar div {
+    height: 100%;
+    background:
+        linear-gradient(to right, #ff00ff, #00ffff, #fff200);
+    box-shadow:
+        0 0 12px rgba(0,255,255,0.75),
+        inset 0 0 8px rgba(255,255,255,0.45);
+}
+/* ==================================================
+EXPERIENCIA - GIFS ARCADE DECORATIVOS
+================================================== */
+
+.experiencia-gifs-arcade {
+    position: fixed;
+    inset: 0;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.exp-gif {
+    position: fixed;
+    width: 66px;
+    height: auto;
+    image-rendering: pixelated;
+    opacity: 0.82;
+    filter:
+        drop-shadow(0 0 10px rgba(255,0,255,0.75))
+        contrast(1.12);
+    pointer-events: none;
+}
+
+.exp-gif-01 {
+    top: 105px;
+    left: 22px;
+    animation: flotarUno 5s infinite alternate ease-in-out;
+}
+
+.exp-gif-02 {
+    top: 190px;
+    right: 28px;
+    animation: girarLogo 5s linear infinite;
+}
+
+.exp-gif-03 {
+    top: 330px;
+    left: 26px;
+    animation: saltar 0.9s infinite alternate;
+}
+
+.exp-gif-04 {
+    top: 410px;
+    right: 38px;
+    width: 78px;
+    animation: flotarDos 5s infinite alternate ease-in-out;
+}
+
+.exp-gif-05 {
+    bottom: 170px;
+    left: 38px;
+    animation: brillar 0.7s infinite alternate;
+}
+
+.exp-gif-06 {
+    bottom: 125px;
+    right: 42px;
+    animation: flotarTres 5.5s infinite alternate ease-in-out;
+}
+
+.exp-gif-07 {
+    top: 540px;
+    left: 72px;
+    width: 74px;
+    animation: temblor 0.42s infinite;
+}
+
+.exp-gif-08 {
+    bottom: 48px;
+    right: 110px;
+    width: 54px;
+    animation: flotarUno 6s infinite alternate ease-in-out;
+}
+
+
+/* ==================================================
+EXPERIENCIA - INSERT COIN
+================================================== */
+
+.experiencia-insert-coin {
+    position: fixed;
+    right: 26px;
+    bottom: 26px;
+    z-index: 30;
+    padding: 12px 16px;
+    background:
+        linear-gradient(to bottom, #000000, #250047);
+    color: #fff200;
+    border: 4px ridge #ff00ff;
+    font-family: Impact, Verdana, sans-serif;
+    font-size: 18px;
+    line-height: 1;
+    text-align: center;
+    letter-spacing: 1px;
+    text-shadow:
+        2px 2px 0 #000000,
+        0 0 10px #fff200;
+    box-shadow:
+        0 0 18px rgba(255,0,255,0.75),
+        6px 6px 0 rgba(0,0,0,0.45);
+    animation: parpadeo 1.2s infinite;
+}
 /* ==================================================
 RESPONSIVE EXPERIENCIA
 ================================================== */
 
+@media screen and (max-width: 900px) {
+    .exp-gif {
+        width: 44px;
+        opacity: 0.42;
+    }
+
+    .experiencia-insert-coin {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .experiencia-gifs-arcade {
+        display: none;
+    }
+
+    .experiencia-levels-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .experiencia-cv-botones a {
+        width: 100%;
+        text-align: center;
+    }
+}
 @media screen and (max-width: 1000px) {
     .experiencia-hero {
         grid-template-columns: 1fr;
